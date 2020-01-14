@@ -1,13 +1,2117 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<!--html lang="en" manifest="offline.manifest"-->
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name=apple-mobile-web-app-capable content=yes />
+<title lang=en-US>PER - Sustainability Research Center, Umbria, Italy</title>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://inspiredlabs.co.uk/per.umbria.it/en/" />
+<link rel="alternate" hreflang="en" href="https://inspiredlabs.co.uk/per.umbria.it/en/">
+<link rel="alternate" hreflang="it" href="https://www.per.umbria.it/">
+<meta name="description" content="Ecotourism showing you how we combine old and new technology to improve quality of life. Take a course here to help understand the sustainability in more depth." />
+<meta name="homepage" content="https://inspiredlabs.co.uk/per.umbria.it/en/index.html" />
+<meta name="keywords" content="Sustainability, Research, Italy, off‑grid, Ethical, Resource management, Perma­culture, Self‑sufficiency, farming, ecotourism, workshops, venue hire, consultation" />
+<meta name="news_keywords" content="Sustainability, Research, Italy, off‑grid, Ethical, Resource management, Perma­culture, Self‑sufficiency, farming, ecotourism, workshops, venue hire, consultation" />
+<meta name="copyright" content="©2019, Scott Phillips" />
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+<meta name="twitter:url" content="https://inspiredlabs.co.uk/per.umbria.it/en/index.html" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@fairtechrvolt" />
+<meta name="twitter:title" content="PER, Sustainability Research Center | PeR, Il Parco dell' Energia Rinnovabile" />
+<meta name="twitter:creator" content="@fairtechrvolt" />
+<meta name="twitter:description" content="Using ecotourism to show you how to combine old methods and new technology! We provide information on improving quality of life and courses to help people understand the basics of sustainability." />
+<meta name="twitter:image" content="https://inspiredlabs.co.uk/per.umbria.it/en/favicon.png" />
+<meta name="twitter:image:src" content="https://inspiredlabs.co.uk/per.umbria.it/en/favicon.png" />
 
-{{ partial "short-text" .Params.blurb}}
+<meta property="og:author" content="Alessandro Ronca" />
+<meta property="og:type" content="hotel" />
+<meta property="og:site_name" content="PeR, Il Parco dell' Energia Rinnovabile" />
+<meta property="og:title" content="PER, Sustainability Research Center | PeR, Il Parco dell' Energia Rinnovabile" />
+<meta property="og:description" content="Using ecotourism to show you how to combine old methods and new technology! We provide information on improving quality of life and courses to help people understand the basics of sustainability." />
+<meta property="og:url" content="https://per.umbria.it/" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="it" />
+<meta property="og:image" content="https://inspiredlabs.co.uk/per.umbria.it/en/images/banner.jpg" />
+<meta property="og:image:secure_url" content="https://inspiredlabs.co.uk/per.umbria.it/en/images/banner.jpg" />
+    
+<link rel=apple-touch-icon href=favicon.png>
+<link rel=icon href=favicon.ico>
+<meta name=theme-color content="#002147">
 
-{{ partial "2-up" .Params }}
+<meta name=apple-mobile-web-app-title content="PER, Umbria">
+<link href="css/bootstrap.min.css" rel=stylesheet>
+<link href="js/flickity.min.css" rel=stylesheet>
+<script type="text/javascript">var _paq = window._paq || []; _paq.push(["trackPageView"]), _paq.push(["enableLinkTracking"]), function () { var e = "//analytics.inspiredlabs.co.uk/"; _paq.push(["setTrackerUrl", e + "matomo.php"]), _paq.push(["setSiteId", "10"]); var a = document, t = a.createElement("script"), p = a.getElementsByTagName("script")[0]; t.type = "text/javascript", t.async = !0, t.defer = !0, t.src = e + "matomo.js", p.parentNode.insertBefore(t, p) }();</script>
+<noscript><img src="//analytics.inspiredlabs.co.uk/matomo.php?idsite=10&amp;rec=1" style="border:0;"
+    alt="" /></noscript><!-- /Matomo -->
+<script>!function(a){var b=navigator.userAgent;a.HTMLPictureElement&&/ecko/.test(b)&&b.match(/rv\:(\d+)/)&&RegExp.$1<45&&addEventListener("resize",function(){var b,c=document.createElement("source"),d=function(a){var b,d,e=a.parentNode;"PICTURE"===e.nodeName.toUpperCase()?(b=c.cloneNode(),e.insertBefore(b,e.firstElementChild),setTimeout(function(){e.removeChild(b)})):(!a._pfLastSize||a.offsetWidth>a._pfLastSize)&&(a._pfLastSize=a.offsetWidth,d=a.sizes,a.sizes+=",100vw",setTimeout(function(){a.sizes=d}))},e=function(){var a,b=document.querySelectorAll("picture > img, img[srcset][sizes]");for(a=0;a<b.length;a++)d(b[a])},f=function(){clearTimeout(b),b=setTimeout(e,99)},g=a.matchMedia&&matchMedia("(orientation: landscape)"),h=function(){f(),g&&g.addListener&&g.addListener(f)};return c.srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",/^[c|i]|d$/.test(document.readyState||"")?h():document.addEventListener("DOMContentLoaded",h),f}())}(window),function(a,b,c){"use strict";function d(a){return" "===a||"	"===a||"\n"===a||"\f"===a||"\r"===a}function e(b,c){var d=new a.Image;return d.onerror=function(){A[b]=!1,ba()},d.onload=function(){A[b]=1===d.width,ba()},d.src=c,"pending"}function f(){M=!1,P=a.devicePixelRatio,N={},O={},s.DPR=P||1,Q.width=Math.max(a.innerWidth||0,z.clientWidth),Q.height=Math.max(a.innerHeight||0,z.clientHeight),Q.vw=Q.width/100,Q.vh=Q.height/100,r=[Q.height,Q.width,P].join("-"),Q.em=s.getEmValue(),Q.rem=Q.em}function g(a,b,c,d){var e,f,g,h;return"saveData"===B.algorithm?a>2.7?h=c+1:(f=b-c,e=Math.pow(a-.6,1.5),g=f*e,d&&(g+=.1*e),h=a+g):h=c>1?Math.sqrt(a*b):a,h>c}function h(a){var b,c=s.getSet(a),d=!1;"pending"!==c&&(d=r,c&&(b=s.setRes(c),s.applySetCandidate(b,a))),a[s.ns].evaled=d}function i(a,b){return a.res-b.res}function j(a,b,c){var d;return!c&&b&&(c=a[s.ns].sets,c=c&&c[c.length-1]),d=k(b,c),d&&(b=s.makeUrl(b),a[s.ns].curSrc=b,a[s.ns].curCan=d,d.res||aa(d,d.set.sizes)),d}function k(a,b){var c,d,e;if(a&&b)for(e=s.parseSet(b),a=s.makeUrl(a),c=0;c<e.length;c++)if(a===s.makeUrl(e[c].url)){d=e[c];break}return d}function l(a,b){var c,d,e,f,g=a.getElementsByTagName("source");for(c=0,d=g.length;d>c;c++)e=g[c],e[s.ns]=!0,f=e.getAttribute("srcset"),f&&b.push({srcset:f,media:e.getAttribute("media"),type:e.getAttribute("type"),sizes:e.getAttribute("sizes")})}function m(a,b){function c(b){var c,d=b.exec(a.substring(m));return d?(c=d[0],m+=c.length,c):void 0}function e(){var a,c,d,e,f,i,j,k,l,m=!1,o={};for(e=0;e<h.length;e++)f=h[e],i=f[f.length-1],j=f.substring(0,f.length-1),k=parseInt(j,10),l=parseFloat(j),X.test(j)&&"w"===i?((a||c)&&(m=!0),0===k?m=!0:a=k):Y.test(j)&&"x"===i?((a||c||d)&&(m=!0),0>l?m=!0:c=l):X.test(j)&&"h"===i?((d||c)&&(m=!0),0===k?m=!0:d=k):m=!0;m||(o.url=g,a&&(o.w=a),c&&(o.d=c),d&&(o.h=d),d||c||a||(o.d=1),1===o.d&&(b.has1x=!0),o.set=b,n.push(o))}function f(){for(c(T),i="",j="in descriptor";;){if(k=a.charAt(m),"in descriptor"===j)if(d(k))i&&(h.push(i),i="",j="after descriptor");else{if(","===k)return m+=1,i&&h.push(i),void e();if("("===k)i+=k,j="in parens";else{if(""===k)return i&&h.push(i),void e();i+=k}}else if("in parens"===j)if(")"===k)i+=k,j="in descriptor";else{if(""===k)return h.push(i),void e();i+=k}else if("after descriptor"===j)if(d(k));else{if(""===k)return void e();j="in descriptor",m-=1}m+=1}}for(var g,h,i,j,k,l=a.length,m=0,n=[];;){if(c(U),m>=l)return n;g=c(V),h=[],","===g.slice(-1)?(g=g.replace(W,""),e()):f()}}function n(a){function b(a){function b(){f&&(g.push(f),f="")}function c(){g[0]&&(h.push(g),g=[])}for(var e,f="",g=[],h=[],i=0,j=0,k=!1;;){if(e=a.charAt(j),""===e)return b(),c(),h;if(k){if("*"===e&&"/"===a[j+1]){k=!1,j+=2,b();continue}j+=1}else{if(d(e)){if(a.charAt(j-1)&&d(a.charAt(j-1))||!f){j+=1;continue}if(0===i){b(),j+=1;continue}e=" "}else if("("===e)i+=1;else if(")"===e)i-=1;else{if(","===e){b(),c(),j+=1;continue}if("/"===e&&"*"===a.charAt(j+1)){k=!0,j+=2;continue}}f+=e,j+=1}}}function c(a){return k.test(a)&&parseFloat(a)>=0?!0:l.test(a)?!0:"0"===a||"-0"===a||"+0"===a?!0:!1}var e,f,g,h,i,j,k=/^(?:[+-]?[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?(?:ch|cm|em|ex|in|mm|pc|pt|px|rem|vh|vmin|vmax|vw)$/i,l=/^calc\((?:[0-9a-z \.\+\-\*\/\(\)]+)\)$/i;for(f=b(a),g=f.length,e=0;g>e;e++)if(h=f[e],i=h[h.length-1],c(i)){if(j=i,h.pop(),0===h.length)return j;if(h=h.join(" "),s.matchesMedia(h))return j}return"100vw"}b.createElement("picture");var o,p,q,r,s={},t=!1,u=function(){},v=b.createElement("img"),w=v.getAttribute,x=v.setAttribute,y=v.removeAttribute,z=b.documentElement,A={},B={algorithm:""},C="data-pfsrc",D=C+"set",E=navigator.userAgent,F=/rident/.test(E)||/ecko/.test(E)&&E.match(/rv\:(\d+)/)&&RegExp.$1>35,G="currentSrc",H=/\s+\+?\d+(e\d+)?w/,I=/(\([^)]+\))?\s*(.+)/,J=a.picturefillCFG,K="position:absolute;left:0;visibility:hidden;display:block;padding:0;border:none;font-size:1em;width:1em;overflow:hidden;clip:rect(0px, 0px, 0px, 0px)",L="font-size:100%!important;",M=!0,N={},O={},P=a.devicePixelRatio,Q={px:1,"in":96},R=b.createElement("a"),S=!1,T=/^[ \t\n\r\u000c]+/,U=/^[, \t\n\r\u000c]+/,V=/^[^ \t\n\r\u000c]+/,W=/[,]+$/,X=/^\d+$/,Y=/^-?(?:[0-9]+|[0-9]*\.[0-9]+)(?:[eE][+-]?[0-9]+)?$/,Z=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,d||!1):a.attachEvent&&a.attachEvent("on"+b,c)},$=function(a){var b={};return function(c){return c in b||(b[c]=a(c)),b[c]}},_=function(){var a=/^([\d\.]+)(em|vw|px)$/,b=function(){for(var a=arguments,b=0,c=a[0];++b in a;)c=c.replace(a[b],a[++b]);return c},c=$(function(a){return"return "+b((a||"").toLowerCase(),/\band\b/g,"&&",/,/g,"||",/min-([a-z-\s]+):/g,"e.$1>=",/max-([a-z-\s]+):/g,"e.$1<=",/calc([^)]+)/g,"($1)",/(\d+[\.]*[\d]*)([a-z]+)/g,"($1 * e.$2)",/^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/gi,"")+";"});return function(b,d){var e;if(!(b in N))if(N[b]=!1,d&&(e=b.match(a)))N[b]=e[1]*Q[e[2]];else try{N[b]=new Function("e",c(b))(Q)}catch(f){}return N[b]}}(),aa=function(a,b){return a.w?(a.cWidth=s.calcListLength(b||"100vw"),a.res=a.w/a.cWidth):a.res=a.d,a},ba=function(a){if(t){var c,d,e,f=a||{};if(f.elements&&1===f.elements.nodeType&&("IMG"===f.elements.nodeName.toUpperCase()?f.elements=[f.elements]:(f.context=f.elements,f.elements=null)),c=f.elements||s.qsa(f.context||b,f.reevaluate||f.reselect?s.sel:s.selShort),e=c.length){for(s.setupRun(f),S=!0,d=0;e>d;d++)s.fillImg(c[d],f);s.teardownRun(f)}}};o=a.console&&console.warn?function(a){console.warn(a)}:u,G in v||(G="src"),A["image/jpeg"]=!0,A["image/gif"]=!0,A["image/png"]=!0,A["image/svg+xml"]=b.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),s.ns=("pf"+(new Date).getTime()).substr(0,9),s.supSrcset="srcset"in v,s.supSizes="sizes"in v,s.supPicture=!!a.HTMLPictureElement,s.supSrcset&&s.supPicture&&!s.supSizes&&!function(a){v.srcset="data:,a",a.src="data:,a",s.supSrcset=v.complete===a.complete,s.supPicture=s.supSrcset&&s.supPicture}(b.createElement("img")),s.supSrcset&&!s.supSizes?!function(){var a="data:image/gif;base64,R0lGODlhAgABAPAAAP///wAAACH5BAAAAAAALAAAAAACAAEAAAICBAoAOw==",c="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",d=b.createElement("img"),e=function(){var a=d.width;2===a&&(s.supSizes=!0),q=s.supSrcset&&!s.supSizes,t=!0,setTimeout(ba)};d.onload=e,d.onerror=e,d.setAttribute("sizes","9px"),d.srcset=c+" 1w,"+a+" 9w",d.src=c}():t=!0,s.selShort="picture>img,img[srcset]",s.sel=s.selShort,s.cfg=B,s.DPR=P||1,s.u=Q,s.types=A,s.setSize=u,s.makeUrl=$(function(a){return R.href=a,R.href}),s.qsa=function(a,b){return"querySelector"in a?a.querySelectorAll(b):[]},s.matchesMedia=function(){return a.matchMedia&&(matchMedia("(min-width: 0.1em)")||{}).matches?s.matchesMedia=function(a){return!a||matchMedia(a).matches}:s.matchesMedia=s.mMQ,s.matchesMedia.apply(this,arguments)},s.mMQ=function(a){return a?_(a):!0},s.calcLength=function(a){var b=_(a,!0)||!1;return 0>b&&(b=!1),b},s.supportsType=function(a){return a?A[a]:!0},s.parseSize=$(function(a){var b=(a||"").match(I);return{media:b&&b[1],length:b&&b[2]}}),s.parseSet=function(a){return a.cands||(a.cands=m(a.srcset,a)),a.cands},s.getEmValue=function(){var a;if(!p&&(a=b.body)){var c=b.createElement("div"),d=z.style.cssText,e=a.style.cssText;c.style.cssText=K,z.style.cssText=L,a.style.cssText=L,a.appendChild(c),p=c.offsetWidth,a.removeChild(c),p=parseFloat(p,10),z.style.cssText=d,a.style.cssText=e}return p||16},s.calcListLength=function(a){if(!(a in O)||B.uT){var b=s.calcLength(n(a));O[a]=b?b:Q.width}return O[a]},s.setRes=function(a){var b;if(a){b=s.parseSet(a);for(var c=0,d=b.length;d>c;c++)aa(b[c],a.sizes)}return b},s.setRes.res=aa,s.applySetCandidate=function(a,b){if(a.length){var c,d,e,f,h,k,l,m,n,o=b[s.ns],p=s.DPR;if(k=o.curSrc||b[G],l=o.curCan||j(b,k,a[0].set),l&&l.set===a[0].set&&(n=F&&!b.complete&&l.res-.1>p,n||(l.cached=!0,l.res>=p&&(h=l))),!h)for(a.sort(i),f=a.length,h=a[f-1],d=0;f>d;d++)if(c=a[d],c.res>=p){e=d-1,h=a[e]&&(n||k!==s.makeUrl(c.url))&&g(a[e].res,c.res,p,a[e].cached)?a[e]:c;break}h&&(m=s.makeUrl(h.url),o.curSrc=m,o.curCan=h,m!==k&&s.setSrc(b,h),s.setSize(b))}},s.setSrc=function(a,b){var c;a.src=b.url,"image/svg+xml"===b.set.type&&(c=a.style.width,a.style.width=a.offsetWidth+1+"px",a.offsetWidth+1&&(a.style.width=c))},s.getSet=function(a){var b,c,d,e=!1,f=a[s.ns].sets;for(b=0;b<f.length&&!e;b++)if(c=f[b],c.srcset&&s.matchesMedia(c.media)&&(d=s.supportsType(c.type))){"pending"===d&&(c=d),e=c;break}return e},s.parseSets=function(a,b,d){var e,f,g,h,i=b&&"PICTURE"===b.nodeName.toUpperCase(),j=a[s.ns];(j.src===c||d.src)&&(j.src=w.call(a,"src"),j.src?x.call(a,C,j.src):y.call(a,C)),(j.srcset===c||d.srcset||!s.supSrcset||a.srcset)&&(e=w.call(a,"srcset"),j.srcset=e,h=!0),j.sets=[],i&&(j.pic=!0,l(b,j.sets)),j.srcset?(f={srcset:j.srcset,sizes:w.call(a,"sizes")},j.sets.push(f),g=(q||j.src)&&H.test(j.srcset||""),g||!j.src||k(j.src,f)||f.has1x||(f.srcset+=", "+j.src,f.cands.push({url:j.src,d:1,set:f}))):j.src&&j.sets.push({srcset:j.src,sizes:null}),j.curCan=null,j.curSrc=c,j.supported=!(i||f&&!s.supSrcset||g&&!s.supSizes),h&&s.supSrcset&&!j.supported&&(e?(x.call(a,D,e),a.srcset=""):y.call(a,D)),j.supported&&!j.srcset&&(!j.src&&a.src||a.src!==s.makeUrl(j.src))&&(null===j.src?a.removeAttribute("src"):a.src=j.src),j.parsed=!0},s.fillImg=function(a,b){var c,d=b.reselect||b.reevaluate;a[s.ns]||(a[s.ns]={}),c=a[s.ns],(d||c.evaled!==r)&&((!c.parsed||b.reevaluate)&&s.parseSets(a,a.parentNode,b),c.supported?c.evaled=r:h(a))},s.setupRun=function(){(!S||M||P!==a.devicePixelRatio)&&f()},s.supPicture?(ba=u,s.fillImg=u):!function(){var c,d=a.attachEvent?/d$|^c/:/d$|^c|^i/,e=function(){var a=b.readyState||"";f=setTimeout(e,"loading"===a?200:999),b.body&&(s.fillImgs(),c=c||d.test(a),c&&clearTimeout(f))},f=setTimeout(e,b.body?9:99),g=function(a,b){var c,d,e=function(){var f=new Date-d;b>f?c=setTimeout(e,b-f):(c=null,a())};return function(){d=new Date,c||(c=setTimeout(e,b))}},h=z.clientHeight,i=function(){M=Math.max(a.innerWidth||0,z.clientWidth)!==Q.width||z.clientHeight!==h,h=z.clientHeight,M&&s.fillImgs()};Z(a,"resize",g(i,99)),Z(b,"readystatechange",e)}(),s.picturefill=ba,s.fillImgs=ba,s.teardownRun=u,ba._=s,a.picturefillCFG={pf:s,push:function(a){var b=a.shift();"function"==typeof s[b]?s[b].apply(s,a):(B[b]=a[0],S&&s.fillImgs({reselect:!0}))}};for(;J&&J.length;)a.picturefillCFG.push(J.shift());a.picturefill=ba,"object"==typeof module&&"object"==typeof module.exports?module.exports=ba:"function"==typeof define&&define.amd&&define("picturefill",function(){return ba}),s.supPicture||(A["image/webp"]=e("image/webp","data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA=="))}(window,document);</script>
+<style>body{padding-top:1.5rem;padding-bottom:1.5rem;color:#4a4a4a;background-color:#e1e1e1;}.white{background-color:#f4f4f4;}pre{color:#a6a6a6;}.header,.marketing,.footer{padding-right:1rem;padding-left:1rem;}.header{padding-bottom:1rem;border-bottom:.05rem solid #e5e5e5;}.header h3{margin-top:0;margin-bottom:0;line-height:3rem;}h5{}h4{}blockquote{font-family:"Georgia","serif";font-size:1.65rem;font-style:italic;line-height:1.45em;text-align:center;color:#000000;padding-bottom:1.618rem;}hr{border-color:#C0C0C0;border-style:solid;border-width:1px;border:1px solid rgba(128, 128, 128, .3);}.footer{padding-top:1.5rem;/* color:#777; */}.container-narrow > hr{margin:2rem 0;}.jumbotron{text-align:center;background-color:#888;border-bottom:.05rem solid #e5e5e5;color:#FFFFFF;border-radius:0;}.jumbotron .btn{padding:.75rem 1.5rem;font-size:1.5rem;}.jumbotron h2{font-weight:300;}.btn{border-radius:0;margin-bottom:1.618rem;position:relative;}.btn:active{top:1px;}@media screen and (min-width:48em){.header,.marketing,.footer{padding-right:0;padding-left:0;}}.card-img-top{border-radius:0;height:auto;width:100%;}.card{border-radius:0;border:0 solid transparent;color:#FFFFFF;}.card-title{position:relative;min-height:7rem;margin-bottom:0;}.card h3{position:absolute;bottom:0;left:0;margin-bottom:0;}.card-title a{color:#FFFFFF;border-bottom:1px solid transparent;}.card-title a:hover{border-bottom:1px solid white;}.card-inverse .card-block{background-color:#FFFFFF;}*{border-radius:0;}.shadow{border-bottom:0.125rem solid silver;}.no-padding{padding-right:0.06rem;padding-left:0.06rem;}#top-banner{background:url('images/base64-planck.svg') black no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding-top:3rem;}#nrg-efficiency{margin-bottom:0;}#natural-arch{margin-bottom:0;}#forms-of-nrg{margin-bottom:0;}#exp-in-nature{margin-bottom:0;}#farming-to-future{margin-bottom:0;}#fast-lane{margin-bottom:0;}#accessible-nrg{margin-bottom:0;}#planet-saving-recipe{margin-bottom:0;}#paper-bricks{margin-bottom:0;}#saving-for-schools{margin-bottom:0;}#volunteering{margin-bottom:0;}#schools{background:url('images/cerchi_bambini_home_1920-604x270.jpg') no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}#stay{background:url('images/ecoturismo-720.jpg') no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}#sustainability{background:url('images/raccolta-604x270.jpg') no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}#knowledge{background:url('images/formdidattica-604x270.jpg') no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}.mustard {color: #FFFFFF;background-color: #8A3700; }.mustard.btn:hover {color: #FFFFFF;background-color: #692200; }.spa{color:#FFFFFF;background-color:#006f45;}.spa.btn:hover{background-color:#005333;}.purple{color:#FFFFFF;background-color:#741472;}.purple.btn:hover{background-color:#570e55;}.oxford{color:#FFFFFF;background-color:#002147;}.oxford.btn:hover{background-color:#001835;}.text-muted{color:#FFFFFF;opacity:0.666;}.no-select{pointer-events:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;}.panel-links{color:#555;position:relative;min-height:19rem;padding-top:1rem;background-color:inherit;}.panel-links h4{font-size:2rem;}.panel-links{border-bottom:2px solid transparent!important;}.panel-links:hover{background-color:rgba(0, 0, 0, .03);text-decoration:none;border-bottom:2px solid transparent;}a{text-decoration:none;border-bottom:2px solid #aaa;padding-bottom:1px;padding-bottom:0.18rem;position:relative;}a:active{top:1px;}a:hover{text-decoration:none;border-bottom:2px solid #4a4a4a;}.trip-advisor-rating{color:#006f45/*color:#589442;*/}@media (max-width:33.9999em){.panel-links:hover{background-color:#888;background-color:rgba(0, 0, 0, 0);}}.flickity-page-dots{top:210px;}.flickity-page-dots .dot{width:1.3rem;height:1.3rem;opacity:0.6;background-color:#FFFFFF;}.flickity-page-dots .dot.is-selected{background:#FFFFFF;}.gallery-cell-image{}.gallery-cell.is-selected{}.gallery-cell span{margin-left:-40px;margin-right:-40px;display:block;font-size:small;}.partner-slider{background-color:#FFFFFF;margin-bottom:1.618rem;}.partner-slider img{height:150px;padding-left:2.6rem;padding-right:2.6rem;}.map-slider{width:225px;height:240px;}@media (min-width:48em){.partner-slider img{padding-left:6rem;padding-right:6rem;}}@media (min-width:62em){.partner-slider img{padding-left:9rem;padding-right:9rem;}}@media (min-width:75em){.partner-slider img{padding-left:14rem;padding-right:14rem;}}.container{padding-top:1rem;margin-bottom:1rem;}body{}.border-spacing-left, .border-spacing-right{margin:0;border-spacing:0;}@media (max-width:34em){}@media (min-width:48em){.border-spacing-left{padding-right:0;}.border-spacing-right{padding-left:0;}}.main-nav{margin-left:-2.1rem;}.main-nav ol{margin:0 0 0 -1.4rem;}.main-nav li{padding:0.618rem 0 0.618rem 0;}.main-nav li a{color:#FFFFFF;opacity:0.9;border-bottom:2px solid rgba(255, 255, 255, 0.9);}.main-nav li a:hover{opacity:1;border-bottom:2px solid rgba(255, 255, 255, 1);padding-bottom:1px;padding-bottom:0.18rem;}</style><style>p{margin-bottom:1.5rem;}#about:focus{outline:none;}.icon{font-size:3rem;}.external{padding-left:0;padding-right:0;}.img-responsive{max-width:72px;padding-bottom:1.6rem;display:block;height:auto;vertical-align:middle;margin:auto;}</style><style>.overlay-footer{bottom:0;width:100%;height:48px;line-height:48px;padding:0;position:fixed;z-index:999;}div#overlay-icon{position:fixed;z-index:3;width:100%;-moz-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-moz-transition:-moz-transform 0.28s;-webkit-transition:-webkit-transform 0.28s;transition:transform 0.28s;}input[type="checkbox"]#togglebox{position:fixed;left:0;top:0;visibility:hidden;}label#navtoggler{position:fixed;z-index:999999;right:0;bottom:0;width:108px;height:48px;background:url(images/per-logo-white-orange.svg) no-repeat 6px 6px black;background-size:88%;cursor:pointer;}nav#offcanvas-menu{width:190px;height:100%;top:0;right:0;z-index:2;-moz-transform:translate3d(130px,0,0);-webkit-transform:translate3d(130px,0,0);transform:translate3d(130px,0,0);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;position:fixed;overflow-x:hidden;backface-visibility: hidden;-ms-overflow-style:none;-webkit-overflow-scrolling: touch;-moz-transition:-moz-transform 0.28s, visibility 0s 0.28s;-webkit-transition:-webkit-transform 0.28s, visibility 0s 0.28s;transition:transform 0.28s, visibility 0s 0.28s;outline:2px #C0C0C0 solid;background-color:#333;}nav#offcanvas-menu a{display:block;color:#FFFFFF;opacity:1;text-rendering:optimizeLegibility;}nav#offcanvas-menu ul{list-style:none;}nav#offcanvas-menu ul li a{padding:1rem 0 1rem 0.5rem;text-transform:uppercase;letter-spacing:0.128rem;border-bottom:none;}nav#offcanvas-menu ul li a:hover{background-color:rgba(0, 0, 0, 0.08);text-decoration:none;border-bottom:none;}nav#offcanvas-menu ul li a.active{background-color:rgba(0, 0, 0, 0.333);font-weight:700;position:relative;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.4);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.4);box-shadow:inset 0 1px 1px rgba(0,0,0,.4);}div.overlay{position:fixed;width:100%;height:100%;left:0;top:0;z-index:1;visibility:hidden;}div.overlay label{width:100%;height:100%;position:fixed;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-ms-touch-action:none;}input[type="checkbox"]#togglebox:checked ~ div#overlay-icon{}input[type="checkbox"]#togglebox:checked ~ nav#offcanvas-menu{-moz-transform:all 0.4s;-webkit-transform:all 0.4s;transform:all 0.4s;-moz-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);visibility:visible;-moz-transition-delay:0s;-webkit-transition-delay:0s;transition-delay:0s;}input[type="checkbox"]#togglebox:checked ~ nav#offcanvas-menu ul{opacity:1;}input[type="checkbox"]#togglebox:checked ~ div.overlay{visibility:visible;}nav#offcanvas-menu a:link{font-family:sans-serif;text-decoration:none;}.overflow{height:12rem;}@media (max-width:33.9999em){body{margin-right:10px}.jumbotron h1{font-size:2.4rem;}.jumbotron h2{font-size:1.6rem;}nav#offcanvas-menu{font-size:0.7rem;width:168px;-moz-transform:translate3d(160px,0,0);-webkit-transform:translate3d(160px,0,0);transform:translate3d(160px,0,0);outline:1px #333 solid;}div.overlay{display:block;}.container{max-width:33.9rem;margin-right:auto;}.table-of-contents{padding:0;}.table-of-contents .card-deck{padding-left:0;padding-right:0;}}@media (min-width:34em){body{margin-right:134px}nav#offcanvas-menu{font-size:0.5rem;}nav#offcanvas-menu a{}nav#offcanvas-menu{width:134px;-moz-transform:translate3d(126px,0,0);-webkit-transform:translate3d(126px,0,0);transform:translate3d(126px,0,0);}div.overlay{display:none;}.container{max-width:34rem;margin-right:auto;}.table-of-contents{padding:0;}.table-of-contents .card-deck{padding-left:0;padding-right:0;}}@media (min-width:48em){body{margin-right:142px}nav#offcanvas-menu{font-size:0.666rem;}nav#offcanvas-menu a{letter-spacing:0;}nav#offcanvas-menu{width:142px;-moz-transform:translate3d(134px,0,0);-webkit-transform:translate3d(134px,0,0);transform:translate3d(134px,0,0);}.container{max-width:45rem;margin-right:auto;}}@media (min-width:62em){body{margin-right:158px}nav#offcanvas-menu{font-size:0.666rem;}nav#offcanvas-menu a{letter-spacing:0;}nav#offcanvas-menu{width:148px;-moz-transform:translate3d(140px,0,0);-webkit-transform:translate3d(140px,0,0);transform:translate3d(140px,0,0);}.container{max-width:60rem;margin-right:auto;}}@media (min-width:75em){body{margin-right:174px}nav#offcanvas-menu{font-size:0.8rem;width:164px;-moz-transform:translate3d(158px,0,0);-webkit-transform:translate3d(158px,0,0);transform:translate3d(158px,0,0);}.container{max-width:72.25rem;margin-right:auto;}}.img-fluid{min-width:100%;width:100%;height:auto;}aside{}figcaption{background:#383838;color:#FFFFFF;padding:1rem;}a:hover,a:active{text-decoration:none!important;}</style>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+<style>
+/* Remove jank:
+	https://stackoverflow.com/questions/2946748/iphone-webkit-css-animations-cause-flicker
+*/
 
-{{ partial "blog" . }}
+nav#offcanvas-menu ul {
+	-webkit-backface-visibility: hidden;
+}
 
-{{ end }}
+nav#offcanvas-menu ul li {
+	-webkit-backface-visibility: hidden;
+}
+
+nav#offcanvas-menu ul li a {
+	-webkit-backface-visibility: hidden;
+}
+</style>
+
+
+</head>
+
+<body id=home>
+
+<a href="#about" class="sr-only sr-only-focusable">Skip to main content</a>
+<article class=container style="padding-bottom: 1rem;">
+<div class=row>
+<label for=lang class=hidden-xs-up>Language:</label>
+<select id=lang class=pull-right onchange="location = this.value;">
+<option value=index.html selected>English</option>
+<option value="http://per.umbria.it/">Italiano</option>
+</select>
+</div>
+</article>
+<article class=container style="padding: 0;">
+<header class="jumbotron shadow" id=top-banner>
+<img alt="PER logo" class=no-select src="images/per-logo-white-orange.svg"  width="" height=128 style="padding-top: 1.52rem;" lang=it title="PER: Il Parco dell' Energia Rinnovabile"/>
+<h1 class=display-1 lang=en-US>Sustainability research&nbsp;center</h1>
+<h2>Italy's&nbsp;largest independent, off&#8209;grid&nbsp;facility</h2><p class=lead>Ethical resource&nbsp;management, perma&shy;culture and&nbsp;self&#8209;sufficiency</p>
+<form action="tel:+39 335 399 215">
+<br/><br/>
+<input class="btn btn-lg spa" type=submit value="&#9990; +39 335 399 215">
+</form>
+</header>
+</article>
+
+
+
+<input type=checkbox id=togglebox checked>
+<nav id=offcanvas-menu>
+<ul class=list-unstyled data-gumshoe style="-webkit-transform-style: preserve-3d;">
+
+<li class=purple><a data-scroll href="#home" ondragstart="return false">
+Home</a></li>
+<li class=purple><a data-scroll href="#about" ondragstart="return false">
+About the centre</a></li>
+<li class=purple><a data-scroll href="#our-story" ondragstart="return false">
+Our story</a></li>
+<li class=purple><a data-scroll href="#tours" ondragstart="return false">
+Tours</a>
+</li>
+<li class=purple><a data-scroll href="#hospitality" ondragstart="return false">Hospitality</a></li>
+<li class=purple><a data-scroll href="#tour-prices" ondragstart="return false">Tour&nbsp;Prices</a></li>
+<li class=purple><a data-scroll href="#accessibility" ondragstart="return false">
+Access&shy;ibility</a>
+</li>
+<li class=purple><a data-scroll href="#umbria" ondragstart="return false">
+Visiting Umbria</a></li>
+<li class=mustard><a data-scroll href="#permaculture" ondragstart="return false">
+Introduction&nbsp;to permaculture&nbsp;&amp;&#x2009;sustainability</a></li>
+<li class=mustard><a data-scroll href="#case-for-permaculture" ondragstart="return false">
+The case for perma&shy;culture</a></li>
+<li class=mustard><a data-scroll href="#philosophy" ondragstart="return false">
+Philosophy</a></li>
+<li class=mustard><a data-scroll href="#ethical-change" ondragstart="return false">
+Ethical change</a></li>
+<li class=mustard><a data-scroll href="#on-site-tech" ondragstart="return false">
+On site technology</a></li>
+<li class=spa><a data-scroll href="#teachers" ondragstart="return false">
+Intro&shy;duction for teachers</a></li>
+<li class=spa><a data-scroll href="#activities-booking" ondragstart="return false">
+Booking activities:</a></li>
+<li class=spa><a data-scroll href="#nrg-efficiency" ondragstart="return false">
+1. Energy Efficiency</a></li>
+<li class=spa><a data-scroll href="#natural-arch" ondragstart="return false">
+2. Natural architecture</a></li>
+<li class=spa><a data-scroll href="#forms-of-nrg" ondragstart="return false">
+3. Forms of&nbsp;energy</a></li>
+<li class=spa><a data-scroll href="#exp-in-nature" ondragstart="return false">
+4. Experiences in&nbsp;nature</a></li>
+<li class=spa><a data-scroll href="#farming-to-future" ondragstart="return false">
+5. Farming to the&nbsp;future</a></li>
+<li class=spa><a data-scroll href="#fast-lane" ondragstart="return false">
+6. Learning in&nbsp;the fast&nbsp;lane!</a></li>
+<li class=spa><a data-scroll href="#accessible-nrg" ondragstart="return false">
+7. Accessible Energy</a></li>
+<li class=spa><a data-scroll href="#planet-saving-recipe" ondragstart="return false">
+8. A planet saving&nbsp;recipe</a></li>
+<li class=spa><a data-scroll href="#paper-bricks" ondragstart="return false">
+9. Building fires with paper&nbsp;bricks</a></li>
+<li class=spa><a data-scroll href="#saving-for-schools" ondragstart="return false">
+10. A penny saved is&nbsp;a penny&nbsp;earned</a>
+</li>
+<!--<li class=spa><a data-scroll href="#pricing" ondragstart="return false">
+Price list</a></li>-->
+<li class=oxford><a data-scroll href="#knowledge-share" ondragstart="return false">
+Knowledge share:</a></li>
+<li class=oxford><a data-scroll href="#venue-hire" ondragstart="return false">
+1. Venue hire</a></li>
+<!--<li class=oxford><a data-scroll href="#courses" ondragstart="return false">
+2. Courses</a></li>-->
+<li class=oxford><a data-scroll href="#workshops" ondragstart="return false">
+3. Workshops</a></li>
+<li class=oxford><a data-scroll href="#volunteering" ondragstart="return false">
+4. Volunteering</a></li>
+<li class=oxford><a data-scroll href="#advice" ondragstart="return false">
+Consultancy advice</a></li>
+<!--<li class=oxford><a data-scroll href="#reading-tips" ondragstart="return false">
+Reading Tips</a></li>
+<li class=oxford><a data-scroll href="#recommended-kit" ondragstart="return false">
+Recommended Kit</a></li>-->
+<li class=oxford><a data-scroll href="#partners" ondragstart="return false">
+Partners</a></li>
+<li class=purple><a data-scroll href="#social" ondragstart="return false">
+Social Media</a></li>
+<li class=purple><a data-scroll href="#contact" ondragstart="return false">
+Contact us</a>
+</li>
+<li class=purple><a data-scroll href="#route" ondragstart="return false">
+Find us on Google Maps</a>
+</li>
+<li class=purple><a data-scroll href="#company" ondragstart="return false">
+Company information</a></li>
+<li class=overflow></li>
+</ul>
+</nav>
+<div class=overlay>
+<label for=togglebox><span class=hidden-xs-up>Menu</span></label>
+</div>
+
+
+<div class=overlay-footer>
+<div id=overlay-icon>
+<label for=togglebox id=navtoggler ><span class=hidden-xs-up>Menu</span></label>
+</div>
+</div>
+<footer class="container table-of-contents">
+<div class="card-deck col-xs-12 col-md-6 border-spacing-left">
+<div class="card purple shadow">
+<div class=card-block>
+<header class=card-title>
+<h3><a data-scroll href="#about" ondragstart="return false">
+Eco&shy;tourism venue</a></h3>
+</header>
+</div>
+<img alt="A photo of people eating" class="card-img-top no-select" id=stay src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="/>
+<div class=card-block>
+<ul class="card-text main-nav" data-gumshoe>
+<li><a data-scroll href="#about" ondragstart="return false">
+About the centre</a></li>
+<li><a data-scroll href="#our-story" ondragstart="return false">
+Our story</a></li>
+<li><a data-scroll href="#tours" ondragstart="return false">
+Tours</a>
+</li>
+<li><a data-scroll href="#hospitality" ondragstart="return false">
+Hospitality</a>
+</li>
+
+<li><a data-scroll href="#tour-prices" ondragstart="return false">
+Tour&nbsp;Prices</a>
+</li>
+
+
+
+<li><a data-scroll href="#accessibility" ondragstart="return false">
+Access&shy;ibility</a>
+</li>
+<li><a data-scroll href="#umbria" ondragstart="return false">
+Visiting Umbria</a></li>
+<hr/>
+<li><a data-scroll href="#social" ondragstart="return false">
+Social Media</a></li>
+<li><a data-scroll href="#contact" ondragstart="return false">
+Contact us</a>
+</li>
+<li><a data-scroll href="#route" ondragstart="return false">
+Find us on Google Maps</a>
+</li>
+<li><a data-scroll href="#company" ondragstart="return false">
+Company information</a></li>
+</ul>
+</div>
+</div>
+<div class="card mustard shadow">
+<div class=card-block>
+<header class=card-title>
+<h3><a data-scroll href="#permaculture" ondragstart="return false">
+Perma&shy;culture&nbsp;&amp; Sustain&shy;ability</a></h3>
+</header>
+</div>
+<img alt="A photo of people tending to tomatoes" class="card-img-top no-select" id=sustainability src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="/>
+<div class=card-block>
+<ul class="card-text main-nav" data-gumshoe>
+<li><a data-scroll href="#permaculture" ondragstart="return false">
+Intro&shy;duction to perma&shy;culture&#x2009;&amp;&#x2009;sustain&shy;ability</a></li>
+<li><a data-scroll href="#case-for-permaculture" ondragstart="return false">
+The case for perma&shy;culture</a></li>
+<li><a data-scroll href="#philosophy" ondragstart="return false">
+Philosophy</a></li>
+<li><a data-scroll href="#ethical-change" ondragstart="return false">
+Ethical change</a></li>
+<li><a data-scroll href="#on-site-tech" ondragstart="return false">
+On site technology</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card-deck col-xs-12 col-md-6 border-spacing-right">
+<div class="card spa shadow">
+<div class=card-block>
+<header class=card-title>
+<h3><a data-scroll href="#teachers" ondragstart="return false">
+Activ&shy;ities for schools</a></h3>
+</header>
+</div>
+<img alt="A photo a school visit" class="card-img-top no-select" id=schools src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="/>
+<div class=card-block>
+<ul class="card-text main-nav" data-gumshoe>
+<li><a data-scroll href="#teachers" ondragstart="return false">
+Intro&shy;duction for teachers</a></li>
+<li><a data-scroll href="#activities-booking" ondragstart="return false">
+Booking activities:</a></li>
+<ol>
+<li><a data-scroll href="#nrg-efficiency" ondragstart="return false">
+Energy Efficiency</a></li>
+<li><a data-scroll href="#natural-arch" ondragstart="return false">
+Natural architecture</a></li>
+<li><a data-scroll href="#forms-of-nrg" ondragstart="return false">
+Forms of&nbsp;energy</a></li>
+<li><a data-scroll href="#exp-in-nature" ondragstart="return false">
+Experiences in&nbsp;nature</a></li>
+<li><a data-scroll href="#farming-to-future" ondragstart="return false">
+Farming to the&nbsp;future</a></li>
+<li><a data-scroll href="#fast-lane" ondragstart="return false">
+Learning in the fast&nbsp;lane!</a></li>
+<li><a data-scroll href="#accessible-nrg" ondragstart="return false">
+Accessible Energy</a></li>
+<li><a data-scroll href="#planet-saving-recipe" ondragstart="return false">
+A planet saving&nbsp;recipe</a></li>
+<li><a data-scroll href="#paper-bricks" ondragstart="return false">
+Building fires with paper&nbsp;bricks</a></li>
+<li><a data-scroll href="#saving-for-schools" ondragstart="return false">
+A penny saved is&nbsp;a penny&nbsp;earned</a>
+</li>
+</ol>
+<!--<li><a data-scroll href="#pricing" ondragstart="return false">
+Price list</a></li>-->
+</ul>
+</div>
+</div>
+<div class="card oxford shadow">
+<div class=card-block>
+<header class=card-title>
+<h3><a data-scroll href="#knowledge-share" ondragstart="return false">
+Know&shy;ledge share</a></h3>
+</header>
+</div>
+<img alt="A photo of consulting" class="card-img-top no-select" id=knowledge src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="/>
+<div class=card-block>
+<ul class="card-text main-nav" data-gumshoe>
+<li><a data-scroll href="#knowledge-share" ondragstart="return false">
+Knowledge share:</a></li>
+<ol>
+<li><a data-scroll href="#venue-hire" ondragstart="return false">
+Venue hire</a></li>
+<!--<li><a data-scroll href="#courses" ondragstart="return false">
+Courses</a></li>-->
+<li><a data-scroll href="#workshops" ondragstart="return false">
+Workshops</a></li>
+<li><a data-scroll href="#volunteering" ondragstart="return false">
+Volunteering</a></li>
+</ol>
+<li><a data-scroll href="#advice" ondragstart="return false">
+Consultancy advice</a></li>
+<!--<li><a data-scroll href="#reading-tips" ondragstart="return false">
+Reading Tips</a></li>
+<li><a data-scroll href="#recommended-kit" ondragstart="return false">
+Recommended Kit</a></li>-->
+<li><a data-scroll href="#partners" ondragstart="return false">
+Partners</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<article class="container white shadow" id=about tabindex=-1>
+<div class=row>
+<header class="col-xs-10 col-sm-12">
+<h2>Eco­tourism venue</h2>
+<h3>About the centre</h3>
+<hr/>
+</header>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h4>Intro&shy;duction</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>PER is pronounced in Italian as <em lang=it>Il Parco dell' Energia Rinnovabile</em>, meaning "renewable energy park". PER is the largest and most comprehensive sustainability research centre in Italy.</p>
+<p>When you arrive you see modern technology everywhere. However, PER was born out of the oldest form of technology: farming. Agricultural farming produces the energy needed to make everything else possible. </p>
+<nav><p><dfn lang=it>Il Parco dell' Energia Rinnovabile</dfn> uses <a data-scroll href="#hospitality" ondragstart="return false">ecotourism</a> to show you how to combine old methods and new technology! We provide information on improving quality of life and courses to help people understand the basics of sustainability. We invite you to try our <a data-scroll href="#ethical-change" ondragstart="return false">ethical food</a> on our courses or partake on <a data-scroll href="#teachers" ondragstart="return false">activities for schools</a>. We have regular <a data-scroll href="#workshops" ondragstart="return false">workshops</a>, provide <a data-scroll href="#venue-hire" ondragstart="return false">venue hire</a> and <a data-scroll href="#contact" ondragstart="return false">consultation</a> for professional projects.</p></nav>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="A photo of the main building" alt="" class="img-fluid no-select" src="images/banner.jpg" width=300 height=225 />
+<figcaption>PER is an old farmhouse, completely restored deep in the forest hills of Umbria, central Italy.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h5>History</h5>
+</div>
+<div class=col-md-6>
+<p>We know the twentieth century legacy for agriculture is not the future. Plastic greenhouses and chemicals have not fulfilled their promise of lifting the world from hunger. Instead, they have depleted soils and caused migration to urban areas for most of the earth's population. Not to mention breeding new, hungry pests.</p>
+<p>For millennia this land fed people, but market over simplification required vegetables to be sold by weight. This became known as <a data-scroll href="#the-problem" ondragstart="return false">the new hunger</a> and did more harm than good. The farmers living here were forced to leave and the brambles reconquered the land and the house returned to rubble.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0436-1x.JPG 1x, images/DSCN0436-2x.JPG 2x"/>
+<figcaption>Farms broke down and became covered in leaves due to the affect of industrial agriculture.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h5>Reversing the trend</h5>
+</div>
+<div class=col-md-6>
+<p>Our approach is to study perma­culture and use renewable energy for a sustainable future.</p>
+<p>We took our first step buying the land. This wonderful, tiring adventure began without external funding. Rebuilding the farm began with just our determination.</p>
+<p>Before we explain our system, all sites are unique. They borrow from each other, but each has their own style. It is the environment that shapes the outcome. Working with nature, we can guide you through PER.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN6889-1x.JPG 1x, images/DSCN6889-2x.JPG 2x"/>
+<figcaption>We work in harmony with nature.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-12 id=our-story>
+<h5>Our story</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>In in 1999 we had to slash through brambles and cut stone. We restored the surrounding fields to farm produce, but we have cut out modern methods. Artificial chemicals and fertilisers are inferior. We use our own natural land management techniques for composting, crop rotation and to deal with pests. We store rain water, just like nature. Of course we are powered by the sun and use modern technologies such as photovoltaics.
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/favva-cottora-1x.jpg 1x, images/favva-cottora-2x.jpg 2x"/>
+<figcaption>The founders of PER working with volunteers.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h5>Our goal</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>We are creating a place to solve problems that meet human needs. We foster cross-pollination between subject areas. We combine, old effective methods with new technology and share our approach to help people meet their own challenges.</p>
+<p>We encourage you to learn more about this kind of problem solving and <a data-scroll href="#hospitality" ondragstart="return false">visit us</a>, <a data-scroll href="#volunteering" ondragstart="return false">volunteer</a>, take part in our <a data-scroll href="#knowledge-share" ondragstart="return false">knowledge share</a> or get involved with our <a data-scroll href="#teachers" ondragstart="return false">activities for&nbsp;schools</a>.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0753-1x.JPG 1x, images/DSCN0753-2x.JPG 2x"/>
+<figcaption>We solve age old problems using traditional techniques and modern technology in a sustainable way.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=tours>
+<h3>Tours</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h4>Overview</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>The tour explores our <a data-scroll href="#philosophy" ondragstart="return false">philosophy</a> and looks at solutions to age old problems.<br/>
+We talk about sustain&shy;­ability: ethical resource management, perma&shy;­culture and self‑sufficiency. We cover the fabric of the building, consumption and efficiency and precious natural resources.<br/>
+We also give you the chance to taste PER life, and eat some of our crops.</p>
+<p>Our guided tour lasts around two hours and costs €7.00 each. We have a minimum requirement of two bookings every tour. This is a great opportunity to meet others with an interest in sustainability and a desire for change.</p>
+<h6><dfn>Kinds of visit at PER</dfn></h6>
+<dl>
+<dt><dfn>Tours</dfn></dt>
+<dd>We provide ecotours to help people learn about sustainability</dd>
+<dt><dfn>Activities for schools</dfn></dt>
+<dd>We help teachers with hands-on learning trips and short-stays</dd>
+<dt><dfn>Short courses</dfn></dt>
+<dd>We provide accommodation and practical sessions for adults</dd>
+<dt><dfn>Organised events</dfn></dt>
+<dd>We provide accommodation, venue hire and catering for education and entertainment</dd>
+</dl>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0354-1x.JPG 1x, images/DSCN0354-2x.JPG 2x"/>
+<figcaption>Food and energy are precious natural resources.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-1></div>
+<div class=col-xs-10><blockquote>Why not choose our zero&nbsp;kilometre food experience?</blockquote>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<h5>Tour details</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>PER is for everyone. We adapt each tour to suit kids, students and professionals so everyone can learn from our example. We are open all year round – so your visit can be arranged to suit you.</p>
+<p>We host an interactive discussion and encourage participation. This gives everyone the chance to enrich their knowledge and we are always looking to advance what we know.</p>
+<p>The tour is best in good weather, morning or afternoon and we offer a dining reservation for at least four people.</p>
+<p>We really want people to have an insight into PER and for €20.00 inclusive, we offer a zero kilometre food experience. People just like you rated this <a href="https://www.tripadvisor.co.uk/Hotel_Review-g1757556-d1756467-Reviews-PeR_Il_Parco_dell_Energia_Rinnovabile-Frattuccia_Province_of_Terni_Umbria.html#photos;=S" target=_blank ondragstart="return false">#1 on Trip&nbsp;Advisor</a>.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0672-1x.JPG 1x, images/DSCN0672-2x.JPG 2x"/>
+<figcaption>We aim to inform people of all ages about how to improve their quality of life.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=hospitality>
+<h3>Hospitality</h3>
+<hr/>
+<h5>Learn and eat at PER</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6 id=eat-here>
+<p>When you visit PER for a tour, course or activities you can make a food reservation. Catering is only available at the time of booking because our kitchens only open on request. Sorry, we aren't a restaurant – but we will aim to please you if we can!</p>
+<h6><dfn>Dining facilities</dfn></h6>
+<dl>
+<dt><dfn>Large groups</dfn></dt>
+<dd>We have space for 60 covers downstairs</dd>
+<dt><dfn>Medium groups</dfn></dt>
+<dd>We have space for 30 covers outside</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>We provide wheelchair access to most areas on site</dd>
+</dl>
+<p>Our healthy menu is mainly vegetarian and vegan and we can cater to specific dietary needs.</p>
+<p>Please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a> to make a food reservation with your tour.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN1226-1x.JPG 1x, images/DSCN1226-2x.JPG 2x"/>
+<figcaption>Simple ingredients aim meet complex dietary needs.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=tour-prices>
+<h5>Tour&nbsp;Prices</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<div class=table-responsive>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th scope=row><span class=hidden-xs-up>Type</span></th>
+<th>Cost per person</th>
+<th>Minimum bookings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope=row>Tour only</th>
+<td>€7</td>
+<td>2 or more&hellip;</td>
+</tr>
+<tr>
+<th scope=row>Tour &amp; meal</th>
+<td>€20</td>
+<td>4 or more&hellip;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Morning and afternoon tours are available 6 days a week.</p>
+<p>Sunday tours are only available in the morning.</p>
+<p>Please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a> to book your tour.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" src="images/trip-advisor-guests-jan-2016.jpg" width=720 height=540 />
+<figcaption>Serena b (Jan 2016), courtesy of Tripadvisor.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12">
+<h4>Sleep here</h4>
+<h5>Overview</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<!--<p style="background-color: red;">Write about the shared lodgings and other facilities*</p>-->
+<p>
+- We are animal friendly.<br/>
+- we cater to walking groups and cyclists.<br/>
+- telephone your reservation. Or if you’re planing on cycling let us know when you’re going to arrive and we can book you in.</p>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h5>Sleep here</h5>
+<p>
+Low impact house<br/>
+ZERO HOUSE:<br/>
+• 1 zero-house w.<br/>
+• 2 beds<br/>
+• 1 kitchen<br/>
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0753-1x.JPG 1x, images/DSCN0753-2x.JPG 2x"/>
+<figcaption>Specify a stay in our premium suite in the low impact house.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h5>Sleep here</h5>
+<p>
+GROUND FLOOR ROOMS:<br/>
+• 4 ground floor rooms<br/>
+• 11 beds<br/>
+• 2 kitchens<br/>
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/banner.jpg 1x, images/banner.jpg 2x"/>
+<figcaption>Sleep here.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h5>Sleep here</h5>
+<p>
+FIRST FLOOR ROOMS:<br/>
+• More bedrooms<br/>
+• Call for details<br/>
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/banner.jpg 1x, images/banner.jpg 2x"/>
+<figcaption>Sleep here.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=accessibility>
+<h3>Access&shy;ibility</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h5>Everybody welcome</h5>
+<h6><dfn>Access to the site</dfn></h6>
+<dl>
+<dt><dfn>Ecotourism made for</dfn></dt>
+<dd>People who value ethical living</dd>
+<dt><dfn>We are pet friendly</dfn></dt>
+<dd>We apply a small service charge for your animal</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30),<br/>
+or full day (9:30 to 16:30)<br/>
+Overnight visits</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>Families welcome</dd>
+<dt><dfn>Access</dfn></dt>
+<dd>The site has wheelchair access</dd>
+<dt><dfn>Lodging</dfn></dt>
+<dd>Most bedrooms require a staircase<br/>
+Wheelchair access in one bedroom<br/>
+Wheelchair access to one shower</dd>
+<dt><dfn>Dining</dfn></dt>
+<dd>Wheelchair access to dining room<br/>
+Wheelchair access to main toilet</dd>
+<dt><dfn>Dietary needs</dfn></dt>
+<dd>We can cater to specific changes to the menu.<br/>We can help you tailor your booking</dd>
+</dl>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN8906-1x.JPG 1x, images/DSCN8906-2x.JPG 2x"/>
+<figcaption>The dining room has good wheelchair access.</figcaption>
+</figure>
+</aside>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN5886-1x.JPG 1x, images/DSCN5886-2x.JPG 2x"/>
+<figcaption>The bathroom has good wheelchair access.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=prices>
+<h3>Booking prices</h3>
+<hr/>
+<h5>Sleep here</h5>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<div class=table-responsive>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Season</th>
+<th>B&amp;B Double room</th>
+<th>Half board</th>
+<th>Low impact house</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope=row>07th&nbsp;Jan - 8th&nbsp;May<br/>
+28th&nbsp;Sept - 18th&nbsp;Dec</th>
+<td>€32</td>
+<td>€52</td>
+<td>Call</td>
+</tr>
+<tr>
+<th scope=row>
+9th&nbsp;May - 24th&nbsp;July<br/>
+24th&nbsp;Aug - 27th&nbsp;Sept</th>
+<td>€37</td>
+<td>€57</td>
+<td>Call</td>
+</tr>
+<tr>
+<th scope=row>
+25th&nbsp;June - 23rd&nbsp;Aug</th>
+<td>€42</td>
+<td>€62</td>
+<td>Call</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Please ask about discounts for children.</p>
+<p>We apply a small service charge of €20 for your small animal to visit.</p>
+<p>Please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a> to book your stay.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" src="images/ecoturismo-720.jpg" width=720 height=480 />
+<figcaption>Our healthy menu is mainly vegetarian and vegan.</figcaption>
+</figure>
+</aside>
+</div>
+</article>
+<article class=container id=umbria>
+<div class=row>
+<div class="col-xs-10 col-sm-12">
+<h3>Visiting Umbria</h3>
+<hr/>
+</div>
+</div>
+<div class="row text-center" style="padding-bottom: 1.618rem;">
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.google.it/maps/place/Lago+Trasimeno/@43.0514906,11.8475615,9z/data=!4m5!3m4!1s0x132eaa906294922d:0x6f37a2f4253ef7aa!8m2!3d43.1295911!4d12.0946818" target=_blank ondragstart="return false">
+<img alt="On-site photo" class="img-circle no-select" src="images/lago-trasimeno.jpg" width=140 height=140>
+<h4>Lake Trasimeno</h4>
+<h5>Italy's largest&nbsp;lake</h5>
+<p>Perugia,&nbsp;Umbria</p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="http://www.umbriantravel.com/?page_id=758" target=_blank ondragstart="return false">
+<img alt="On-site photo" class="img-circle no-select" src="images/italiaparchi-dunarobba.jpg" width=140 height=140>
+<h4>Fossil<br/>Forest</h4>
+<h5>Dunarobba</h5><p>Europe's largest petrified&nbsp;forest</p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.tripadvisor.com/Attraction_Review-g194934-d6650890-Reviews-Piazza_del_Popolo-Todi_Province_of_Perugia_Umbria.html" target=_blank ondragstart="return false">
+<img alt="On-site photo" class=no-select src="images/ccc-circle-tripadvisor.svg" width=140 height=140>
+<h4>Piazza&nbsp;del Popolo</h4>
+<h5>Todi, Perugia, Umbria</h5>
+<p>A beautiful historical&nbsp;city</p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.tripadvisor.com/Attraction_Review-g2241857-d1392223-Reviews-Cascata_delle_Marmore-Marmore_Terni_Province_of_Terni_Umbria.html" target=_blank ondragstart="return false">
+<img alt="On-site photo" class="img-circle no-select" src="images/cascata-con-arcobaleno.jpg" width=140 height=140>
+<h4 lang=en-us>Marmore Falls</h4>
+<h5>Terni, Umbria</h5>
+<p>A cultural and panoramic waterfall</p>
+</a>
+</div>
+</article>
+<article class="container white shadow" id=permaculture>
+<div class=row>
+<div class="col-xs-10 col-sm-12">
+<h2>Perma­&shy;culture &amp; Sustain­&shy;ability</h2>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-sm-12>
+<h3>Intro&shy;duction­</h3>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>Perma&shy;culture is observing what an environment does naturally to maintain growth sustainably.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSC_0563-1x.JPG 1x, images/DSC_0563-2x.JPG 2x"/>
+<figcaption>Our food is grown based on the principals of perma­culture for qualitative agriculture. Modern technology also helps.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-sm-12 id=case-for-permaculture>
+<h4>The case for perma&shy;culture</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>In Italy agriculture is a disadvantaged sector in need of financial aid. Yet&nbsp;people have supported themselves on the land sustainably for millennia. At PER we wondered what has made agriculture unable to support itself?</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN0458-1x.JPG 1x, images/DSCN0458-2x.JPG 2x"/>
+<figcaption>The people who lived here in the past abandoned the land. Quantitative agriculture is the market demand to produce food for sale by weight. It requires farmers to "inflate" vegetables so they're heavy, rather than nutritional. This problem of financial intervention failed people everywhere.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-sm-12 id=the-problem>
+<h4>The agriculture problem</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>Quantitative agriculture emerged and farmers had to sell their food by weight. This over simplification became known as <i>the new hunger</i>, doing more harm than good. Farms like this one no longer produced high quality, nutritional food.</p><p>
+They didn't have enough water to "inflate" vegetables required for an industrial market place &hellip;farms all over the planet followed this trend.</p>
+<p>Unable to compete, farmers moved into towns to make another living. This pushed them to buy chemically fertilised food cultivated by others en-mass. As this happened, the brambles reconquered the land and the house returned to rubble.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN2546-1x.JPG 1x, images/DSCN2546-2x.JPG 2x"/>
+<figcaption>Agriculture’s economic problems affected farmers. Their farms broke down and became covered in leaves.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-sm-12 id=the-solution>
+<h4>The perma&shy;culture solution</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>Over the past few years we have developed our own agricultural system. Based on the principals of perma&shy;culture we plan resources at every stage of the process. Our vegetable production uses waste as a fertiliser for example, it's highly efficient. It's similar to organs of a human body: each has an important job to do, and functions in harmony together.</p>
+<p>Understanding perma&shy;culture is more than agronomy and much more than buzzword. It is understanding how a sustainable lifestyle on the land works. perma&shy;culture can feed future generations and it pays for itself in the process.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSC_0620-1x.JPG 1x, images/DSC_0620-2x.JPG 2x"/>
+<figcaption><p><dfn>Agronomy</dfn> is soil management science.</p>
+<p>Permaculture is understanding the environment as a whole: climate, water conservation, and mineral nutrition, all this helps us grow healthy crops. Agronomy is how we understand the soil. This helps us deal with problems like weeds, fertilise and cultivate our crops properly.</p></figcaption>
+</figure>
+</aside>
+</div>
+<div class=row id=philosophy>
+<div class=col-xs-1></div>
+<div class=col-xs-10><blockquote>If you want a different climate&nbsp;&mdash; human&nbsp;&amp;&nbsp;planetary, then you already share&nbsp;our&nbsp;goals!</blockquote>
+</div>
+</div>
+<div class=row>
+<div class=col-sm-12>
+<h3>Philosophy</h3>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>Away from the monotony and alienation of everyday city life, PER is an alternative in nature. We are making sustainability happen. To begin with, this was a challenge.</p>
+<p>Turning this project into reality meant sharing everything. Not just other people's energy and enthusiasm, but their dreams.</p>
+<p>Around a stable nucleus PER enables different life paths to come together with a common intention.</p>
+<p>We live and work together. We cook and dine together. We celebrate and share rapport without rivalry or conflict.</p>
+<p>Learn more with this <a href="https://www.youtube.com/watch?v=12b5IJVEj-Q" ondragstart="return false">interview</a> with the PER founder, Alessandro.</p>
+</div>
+<aside class=col-md-6>
+<figure class=carousel-cell>
+<a href="https://www.youtube.com/watch?v=12b5IJVEj-Q">
+<img alt="On-site photo" alt="" class=img-fluid srcset="images/youtube-default-x1.jpg 1x, images/youtube-default-x2.jpg 2x"/>
+</a>
+<figcaption><h6>Alessandro's journey</h6>
+<p><dfn>An interview with the PER founder:</dfn> Alessandro discusses the house &amp; the dream in this video about eco-tourism, and the activities that PER provides.</p>
+</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-1></div>
+<div class=col-xs-10><blockquote>Happy people contribute&nbsp;more</blockquote>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>The principles of sharing are adopted everywhere onsite and in making group decisions. The use of non-violent communication helps resolve problems and a philosophy of deep democracy is felt in everything we do. We make everyone an equal among equals and reassure everyone they are not alone. </p>
+<p>We welcome you to join PER and hope our experiment helps fulfil your dreams. We will tell you about our experiences, where we are, and where we want to go.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/3b_1-azienda_agricola-1x.jpg 1x, images/3b_1-azienda_agricola-2x.jpg 2x"/>
+<figcaption>Our philosophy aims to inspire.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=ethical-change>
+<h3>Ethical change</h3>
+<hr/>
+<h4>Principals and priorities, one and the same</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>We want to bring about prosperity and do so ethically. Saving resources should not be a sacrifice, nor should it have hidden costs.</p>
+<p> Waste causes unpleasant sacrifices and it's obvious what we have tried has not worked. We can change this.</p>
+<h5>Our priorities</h5>
+<p>As well as permaculture this project uses renewable energy. We have solar collectors both on the roof and the ground. Photovoltaic panels produce electricity built into the home. The walls are ventilated and circulate hot air, and we use the wind and we collect the rain, for sanitary water. To make this change, takes careful planning.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN6136-1x.JPG 1x, images/DSCN6136-2x.JPG 2x"/>
+<figcaption>We carefully manage our waste and we eat what we grow.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=on-site-tech>
+<h3>On site technology</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12">
+<h4>Change is possible</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>We wish to lead by example, so we would like to share the pleasure of our success. Real change requires the right information. By seeing PER in operation it will help you apply changes for yourself.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/corsi_adulti-1x.jpg 1x, images/corsi_adulti-2x.jpg 2x"/>
+<figcaption>Discussing success &amp; integration.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-xs-1></div>
+<div class=col-xs-10><blockquote>To achieve autonomy,<br/>we prioritise efficiency, distribution,&nbsp;and water</blockquote>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h6>Efficiency</h6>
+<p>We started from the most obvious concept: <i>avoid waste</i>. Our self-sufficient retreat is built from bricks made from <a href="http://en.blocchiisotex.com/">Isotex</a>. A cement mixed with mineralised wood, which form overlapping fibres in a matrix. This is biomimicary, by it's very nature it is a high performance insulator. Ideal for heat retention. The exterior has been rebuilt with existing local stone, looking very traditional and the roof has deep insulation.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSCN6827-1x.JPG 1x, images/DSCN6827-2x.JPG 2x"/>
+<figcaption>Isotex retains heat better than standard breeze blocks.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h6>Distribution</h6>
+<p>The whole house has underfloor heating. Using tubes and mirrors we direct daylight from above ground into the darkest rooms. In winter, hot air from solar collection heats rooms well and efficiently. In summer, geothermal vents under the building refresh the indoor air.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSC_0024-1x.JPG 1x, images/DSC_0024-2x.JPG 2x"/>
+<figcaption>Bio-architecture relies on implementing resources properly.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h6>Water</h6>
+<p>With very long periods of hot weather there are special considerations like a drought. Along with collecting rain water, we recover grey water to reuse in the drains. We also made our own wetlands to help growing.</p>
+<p>The results of water conservation are everywhere, without affecting comfort. You can see it when you flush the toilet.
+Water conservation improves hygiene too. Rainwater is soft and mildly acidic, so more friendly to the skin and can cut how much soap you need.
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/DSC_0076-1x.JPG 1x, images/DSC_0076-2x.JPG 2x"/>
+<figcaption>We encourage guests to produce grey water. This is automatically stored for flushing the toilets.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h6>Autonomy</h6>
+<p>It is only possible when our other plans are in place – because, autonomy comes through adding longterm systems. These help balance demand.</p>
+<p>We do this with wind generators. They harness yearly winds and we have a backup generator. The generator runs from vegetable oil, which we press ourselves on site. This all helps overcome the ups and downs.
+</p>
+<p>Two large collectors store around 4,000 litres of heat produced by the sun. A biomass stove concentrates our waste to supply bath water from pellets.
+</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/img_7088_9497247312_o-1x.jpg 1x, images/img_7088_9497247312_o-2x.jpg 2x"/>
+<figcaption>Configuring our energy production and consumption monitor.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=hospitality>
+<h5>PER combines the following technologies</h5>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<dl>
+<dt>Rain water collection and reuse</dt>
+<dd>A network of pipes and filters helps us reuse grey water for flushing toilets. We keep rain water for showering and use in the sink.</dd>
+<dt>Solar heating</dt>
+<dd>We store around 4,000 litres of natural heat which circulates inter&shy;seasonally.</dd>
+<dt>Biomass heating</dt>
+<dd>We recycle waste into useful, economical pellets.</dd>
+<dt>Natural cooling ventilation</dt>
+<dd>Underground pipes help keep the air in the building fresh</dd>
+<dt>Modified appliances attain near-optimum efficiency</dt>
+<dd>Our washing machines use pre-heated water. Far more economical than standard dish and clothes appliances.</dd>
+</dl>
+</div>
+<div class=col-md-6>
+<dl>
+<dt>Solar efficiency</dt>
+<dd>Our low impact house uses a glass enclosure and simple piping to heat the building.</dd>
+<dd>We have modern greenhouses that combine technologies to retain heat and improve growing.</dd>
+<dt>Lighting efficiency</dt>
+<dd>Tubes and mirrors redirect light into the building.</dd>
+<dd>All our lights work through our integrated solar system.</dd>
+<dt>Energy generation</dt>
+<dd>We have wind generators and solar panels.</dd>
+<dd>Different battery types for redundancy.</dd>
+<dt>Photovoltaic systems</dt>
+<dd>Thin-film solar panels (still works during cloudy weather).</dd>
+<dd>Monocrystalline solar panels (works optimally in bright sunshine).</dd>
+<dd>Irrigation pumps.</dd>
+<dd>Electric Fences (keep out the wild without harm).</dd>
+</dl>
+</div>
+</div>
+<div class=row>
+<aside class="col-xs-12 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/472803_10150792452772746_2030068506_o-1x.jpg 1x, images/472803_10150792452772746_2030068506_o-2x.jpg 2x"/>
+<figcaption>PER shows how an alternative can be comfortable, economical and sustainable.</figcaption>
+</figure>
+</aside>
+</div>
+</article>
+<article class="container white shadow" id=teachers>
+<div class=row>
+<header class="col-xs-10 col-sm-12">
+<h2>Activities for&nbsp;schools</h2>
+<hr/>
+</header>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12">
+<h3>Intro&shy;duction for teachers</h3>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>PER is ideal for&nbsp;schools. Located in outstanding natural beauty it is the ideal environment for learning, regardless of age. Our system aims to support itself to give access to more students, more tutors and more learning opportunities.</p>
+<h4>About our courses:</h4>
+<p>We understand the importance of adaptation. We can help tailor the activities to meet your learning goals.</p>
+</div>
+<aside class="col-md-6 lazy-load carousel" data-flickity-options='{ "lazyLoad": true, "contain": true, "prevNextButtons": false, "pageDots": false, "accessibility": false, "draggable": false }'>
+<figure class=carousel-cell>
+<img alt="On-site photo" alt="" class="img-fluid no-select" srcset="images/About_PeR15-1x.JPG 1x, images/About_PeR15-2x.JPG 2x"/>
+<figcaption>Courses are inclusive for all ages.</figcaption>
+</figure>
+</aside>
+</div>
+<div class=row id=activities-booking>
+<div class="col-xs-10 col-sm-12">
+<h4>Activ&shy;ities for&nbsp;schools booking</h4>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>Browse the activities and <a data-scroll href="#contact" ondragstart="return false">get in touch</a> to tell us what you'd like to participate in.</p><p>Please notify us when booking if you want to learn about a specific combination of activities.</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</header>
+</div>
+</div>
+<section class=card-inverse>
+<header class="jumbotron spa" id=nrg-efficiency>
+<h3>Energy efficiency and sustainability</h3>
+<h4>An intro&shy;duction to sustainable energy</h4>
+<h5>For secondary schools and colleges</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=1"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p1p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Energy efficiency and sustainability</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Secondary schools<br/>Technical colleges</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>12+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>An intro&shy;duction to energy efficiency without compromise. Before we produce energy, we explain managing it. We do not want to waste heat, or electricity so we show you how we manage it, as a system.</p>
+<p>We lead experiments to produce renewable energy and understand the benefits of Class-A electronics.</p>
+<p>A tour of the park focuses on our zero-energy home. Here, we look into different off-grid technologies and photovoltaics that can re-supply the grid. </p>
+<h6>We cover a range of technologies, their use-case and their benefits:</h6>
+<ul>
+<li>Types of solar cell (monocrystalline, polycrystalline and thin film)</li>
+<li>Using flat collectors for thermal energy, and more complex systems with glycole</li>
+<li>Different kinds of water pump for exterior permaculture, and high efficiency indoor systems</li>
+<li>Rainwater collection and management</li>
+</ul>
+<h6>Production systems</h6>
+<dl>
+<dt>We look at heat from <dfn>Biomass for thermal energy</dfn></dt>
+<dd>Wood</dd>
+<dd>Pellets</dd>
+<dd>Different kinds of compost</dd>
+<dd>Agricultural residues</dd>
+</dl>
+<dl>
+<dt>We look at using <dfn>Biomass for building materials</dfn></dt>
+<dd>Processed wood</dd>
+<dd>Cementitious brick mixtures</dd>
+<dd>Managed woodland for flood prevention*</dd>
+</dl>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=natural-arch>
+<h3>Bio-architechture and energy technology</h3>
+<h4>An intro&shy;duction to natural architecture</h4>
+<h5>For secondary schools, colleges and professionals</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=1"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p1p2</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Bio-architechture and energy technology</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Secondary schools<br/>
+Technical colleges<br/>
+The hospitality industry and professional surveyors</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>12+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>A behind the scenes look at natural architecture in practice. Understand and interact with the site, as we guide you through our own natural architecture.</p>
+<h6>Energy efficient building techniques</h6>
+<p>We look at the use of passive and active technologies for harmonious building.</p>
+<h6>Passive systems:</h6>
+<ul>
+<li>Methods of conservation</li>
+<li>Structural technologies</li>
+<li>Natural energy storage</li>
+<li>Solar greenhouses</li>
+</ul>
+<h6>Active systems:</h6>
+<ul>
+<li>Photovoltaics</li>
+<li>Wind generation</li>
+<li>Types of biomass</li>
+<li>Geothermal air conditioning</li>
+<li>Rainwater recovery and waste management</li>
+</ul>
+<p>After talking about natural architecture, we have a QA session with the designers of the park.</p>
+<h6>Pitfalls and precautions</h6>
+<p>A hands-on session digging deeper into the reasoning behind our chosen methods. Here you'll learn about the dos-and-don'ts from experience.</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=forms-of-nrg>
+<h3>Forms of energy</h3>
+<h4>An intro&shy;duction to energy</h4>
+<h5>For primary and secondary schools</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=2"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p2p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Forms of energy</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Primary schools<br/>
+Secondary schools</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>8+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>We answer energy questions such as what is energy? Why do we need it? How do we produce it?</p>
+<p>Today it is possible to be self-sufficient. Come and see our example of energetic autonomy.</p>
+<p>We begin with an analysis of common energy efficiency techniques for heat and water. We use hands-on experiments based on the on-site examples.</p>
+<p>With this activity you'll realise important resources are also highly abundant and readily accessible! Working in harmony with nature, we see possibilities to use these techniques everywhere. We have a range of experiments that help explore these ideas.</p>
+<h6>Timetable:</h6>
+<ul>
+<li>Overview and group formation</li>
+<li>Visit the low impact house</li>
+<li>Visit some of the other experiments</li>
+<li>Learn more about electricity, on, and off-grid</li>
+<li>Advantages of different photovoltaics</li>
+<li>Using different solar collectors: vacuum pipes and transfer fluid, thermal dryers, and powered and unpowered air conditioning</li>
+<li>Kinds of solar water pumps</li>
+<li>Using biomass for heating</li>
+<li>Rainwater recovery</li>
+<li>Lunch (if purchased)</li>
+<li>In the Lab! A choice of activities such as: make a food dryer, solar collector or thermal heater</li>
+<li>Deeper into PER (full day only)</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=exp-in-nature>
+<h3>Experiences in nature</h3>
+<h4>An intro&shy;duction to the environment</h4>
+<h5>For nursery, primary and secondary schools | Partial wheelchair&nbsp;access</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=3"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p3p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Experiences in nature</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Nursery schools<br/>
+Primary schools<br/>
+Secondary schools</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>4 – 12</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Partial wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>The park is surrounded by nature, which gives us an opportunity to reflect on raw materials and how we use them.</p>
+<p>Here we study mature ecosystems, like forests. Then other ecosystems such as fields where cattle grazes and and how people cultivate the land.</p>
+<p>We develop our understanding and awareness of the environment. This activity is tailored to suit the age and abilities of participants.</p>
+<p>We look at photosynthesis, the life cycle of plants, nutrition in growing, and what we use plants for. We study biodiversity. We look at the symbiotic relationship between plants and the animals that live in them.</p>
+<h5>Timetable:</h5>
+<ul>
+<li>Welcome overview</li>
+<li>Combine into groups</li>
+<li>Use all of our senses to understand the environment</li>
+<li>Observe the environment</li>
+<li>Recreate a site-map using found material</li>
+<li>Lunch (if purchased)</li>
+<li>In the Lab! An activity session planting seeds and transplanting cuttings</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=farming-to-future>
+<h3>Farming to the future</h3>
+<h4>An intro&shy;duction to efficient farms</h4>
+<h5>For primary and secondary schools, and colleges | Partial wheelchair&nbsp;access</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=3"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p3p3</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Experiences in nature</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Primary schools<br/>
+Secondary schools<br/>
+Agriculture colleges
+</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>8+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Partial wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>Good traditions, past farming secrets and modern technology can make farming better. Together we learn to eat better and create a zero-impact future!</p>
+<p>We reduce the use of hydrocarbons like fossil fuels. We also don't over water food. This helps us increase the nutritional value and reduces weight with lower food-miles!</p>
+<h6>Sustainable eating</h6>
+<p>We look at the ethical issues of biomass as energy. We look at the benefits and side-effects of bio-methane, palm oil and veggie oils. We look at low-impact bio-mass such as: wood, pellets, thermal compost heating and wood chip.
+<h6>Reevaluating food waste</h6>
+<p>We look at the value of waste and how to reuse it through different kinds of composting and fertili2sation.</p>
+<p>We aim for 0km meals and we discuss "mindful shopping". This is not just looking at the nutritional value of your food, but issues such as how far away our food has traveled. We also think about reducing waste through different methods like buying as much as you need.</p>
+<h6>Understanding wild plants</h6>
+<p>We study improving soil quality and how to be selective with plants, herbs and medicines. We aim to reestablish our relationship with the biodiversity, benefiting the land and our harvest.</p>
+<h6>Summary</h6>
+<p>We know that improving local farming will make a better global future, and these methods can improve access to food and resources.</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=fast-lane>
+<h3>Learning in the fast lane!</h3>
+<h4>Burn human calories, not hydrocarbons</h4>
+<h5>For primary and secondary schools | Partial wheelchair&nbsp;access*</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=4"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p4p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Learning in the fast lane!</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Primary schools<br/>
+Secondary schools<br/>
+</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>4 – 12</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Partial wheelchair&nbsp;access*</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h6><dfn>About this activity:</dfn></h6>
+<p>Dedicated to the reduction of CO2, here we learn about modern mobility. This is a fun way to experience our own energy efficiency. Humans are among the most efficient in nature using ~2800k calories to work nonstop for 24 hours, and to think, all this energy comes from our food! Man is a perfect machine!</p>
+<h5>Timetable:</h5>
+<ul>
+<li>Welcome overview</li>
+<li>Combine into groups</li>
+<li>Learn about traditional means of transport</li>
+<li>Experiment with fun vehicles using our muscles for mobility, without any CO2 emissions!</li>
+<li>Lunch (if purchased)</li>
+<li>Discuss mobility trends. We talk about improving public transport, carpooling and car sharing and collective buying. Also, what the future might hold!</li>
+<li>Visit the energy park (if any full day)</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=accessible-nrg>
+<h3>Accessible Energy</h3>
+<h4>An intro&shy;duction to being energetically&nbsp;aware</h4>
+<h5>For all age groups | wheelchair access</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=4"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p4p2</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Accessible Energy</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>All age groups with disabilities</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>4+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h5><dfn>About this activity:</dfn></h5>
+<p>Unrestrained in nature, we delve into our senses to learn more about sustainability. We see for ourselves the importance of natural energy production. We find out how much energy we need to move around and how to generate it.</p>
+<p>We learn to become even more active about saving energy in every day life!</p>
+<h5>Timetable:</h5>
+<ul>
+<li>Welcome overview</li>
+<li>Combine into groups</li>
+<li>Visit the low impact house</li>
+<li>Visit some of other park experiments</li>
+<li>Discuss sustainable mobility and alternative vehicles</li>
+<li>Lunch (if purchased)</li>
+<li>In the Lab! An activity session with renewable energy devices</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=planet-saving-recipe>
+<h3>A planet saving recipe!</h3>
+<h4>Stay to face climate change head on</h4>
+<h5>For primary and secondary schools</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=5"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p5p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>A planet saving recipe!</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Primary schools<br/>
+Secondary schools<br/>
+</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>2 nights 3 days<br/>
+1 night 2 days
+</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>8+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h5><dfn>About this activity:</dfn></h5>
+<p>We begin by introducing some of the problems faced by humanity. We look the the systems on site, and make new ones through practical workshops.<br/>
+We talk about energy and climate change: what is going on and how can we deal with these issues?
+</p>
+<p>The second day we look at how to curb waste and end energy problems. We learn about our actions and behavior can be even more efficient.</p>
+<p>
+The third day, we discover where to find alternative energy. The renewable energy workshop explores in more depth how things work at PER.</p>
+<h5>2 nights 3 days timetable:</h5>
+<h6>Day 1:</h6>
+<ul>
+<li>Welcome overview</li>
+<li>An intro&shy;duction to climate change. A role playing game</li>
+<li>Lunch</li>
+<li>Visit some of other park experiments</li>
+<li>Experiment with fun vehicles using our muscles for mobility, without any CO2 emissions!</li>
+<li>Evening meal</li>
+<li>Discussion and activities</li>
+</ul>
+<h6>Day 2:</h6>
+<ul>
+<li>Breakfast</li>
+<li>Presentation</li>
+<li>Practical renewable energy workshop</li>
+<li>Lunch</li>
+<li>Nature walk to observe the surrounding environment</li>
+<li>Question time</li>
+<li>Evening meal</li>
+<li>Discussion and activities</li>
+</ul>
+<h6>Day 3:</h6>
+<ul>
+<li>Breakfast</li>
+<li>Presentation</li>
+<li>Practical activities</li>
+<li>Lunch</li>
+<li>Practical activities</li>
+<li>Closing summary</li>
+</ul>
+<hr/>
+<h5>1 night 2 days timetable:</h5>
+<h6>Day 1:</h6>
+<ul>
+<li>Welcome overview</li>
+<li>An intro&shy;duction to climate change. A role playing game</li>
+<li>Lunch</li>
+<li>Visit some of other park experiments</li>
+<li>Experiment with fun vehicles using our muscles for mobility, without any CO2 emissions!</li>
+<li>Evening meal</li>
+<li>Discussion and activities</li>
+</ul>
+<h6>Day 2:</h6>
+<ul>
+<li>Breakfast</li>
+<li>Presentation</li>
+<li>Practical renewable energy workshop</li>
+<li>Lunch</li>
+<li>Nature walk to observe the surrounding environment</li>
+<li>Question time</li>
+<li>Closing summary</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=paper-bricks>
+<h3>Building with paper bricks</h3>
+<h4>An intro&shy;duction to direct recycling</h4>
+<h5>For nursery, primary and secondary schools</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=6"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p6p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Building with paper bricks</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>Nursery schools<br/>
+Primary schools<br/>
+Secondary schools</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>4+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h5><dfn>About this activity:</dfn></h5>
+<p>
+We learn the importance of reducing waste and how this forms the basis of sustainability.<br/>
+We look at the three Rs of sustainability: Recovery, Reuse, Recycle. These represent our social objectives and help us rediscover an ancient sustainable life style.
+</p>
+<h6>A change of direction</h6>
+<p>The management of the entire life cycle of goods is becoming increasingly important. <br/>
+Using recovery, reuse and recycling of paper we learn about sustainable fuel. We teach ethical decision making and how to do the right thing.</p>
+<h6>Global eco-village</h6>
+<p>You might call PER an eco-village – either way, it's an ideal place to think about sustainable cities. We aim to make an airport onsite for children!<br/>
+We discover precious resources and management systems. Those of: plants, housing, services, energy, mobility and socialising. The practical session uses recycled materials like paper to explore energy.</p>
+<h6>Adaptation of activities</h6>
+<p>
+Preschool children recover plastic bottles to make an ideal planting bed for vegetables. An important part of any sustainable city!</p>
+<p>
+Schools recover paper for recycling. Then we perform briquetting with a user-friendly tool. This simple manual process called: maceration transforms paper into useful bricks.<br/>
+They can help the construction of sustainable buildings or even generate heat!</p>
+<p>
+Secondary schools recover diversified materials, like aluminium cans, PC fans and power adapters. We use glass to build different technologies in our sustainable city. We also explore installing other efficient integrated systems.
+</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class=card-inverse>
+<header class="jumbotron spa" id=saving-for-schools>
+<h3>A penny saved is a penny earned</h3>
+<h4>An intro&shy;duction to saving energy</h4>
+<h5>For primary and secondary schools</h5>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a lang=it href="docs/scheda-di-prenotazione-esperienza-guidata.pdf#page=7"><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Adobe Acrobat" ondragstart="return false" width=96 height=96 />PDF p7p1</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>A penny saved is a penny earned</dfn></h5>
+<dl>
+<dt><dfn>Who is this for?</dfn></dt>
+<dd>
+Primary schools<br/>
+Secondary schools</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>Half day (9:30 to 12:30)<br/>Full day (9:30 to 16:30)</dd>
+<dt><dfn>Age</dfn></dt>
+<dd>8+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Complete wheelchair&nbsp;access</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h5><dfn>About this activity:</dfn></h5>
+<p>
+How can we reduce CO2 emissions and, at the same time save money for our schools?
+</p>
+<h6>Saving money and saving energy together</h6>
+<p>We discuss how wasteful it is to release CO2 into the atmosphere. This helps us understand why we need to reduce energy consumption and apply it to our school buildings.
+</p>
+<p>We use monitoring tools to reduce our electricity consumption and emissions. Working together it's possible to save 20% on our utility bills – your teachers will be happy they came to PER!</p>
+<p>This project involves everyone at school: students, teaching staff, support staff and parents. Through awareness and carefully monitoring readings we save money and become more energy efficient.</p>
+<h6>Three steps to saving</h6>
+<p>A theoretical session. Students, faculty and support staff and parents are all present.</p>
+<p>Practical part one. Students detect and analyse electricity use. We look at heating school buildings and other places we might spot waste.</p>
+<p>Faculty session. We present ways to make on-going improvements and technical QA.</p>
+<h6>Credit where it's due!</h6>
+<p>The savings your school can achieve will mean visiting PER will fund itself. Involving students and their families your school community can all benefit from this visit!</p>
+<h6>Credit where it's due!</h6>
+<p>At the end of the course we give you an energy pack. This contains everything you need to track your school's energy use. Perfect for getting everyone's approval!</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215" ondragstart="return false">
+</form>
+</div>
+</div>
+</div>
+</section>
+<!--hr/>
+<div class=col-lg-6 id=pricing>
+<header>
+<h4>Pricing</h4>
+<p lang=it></p>
+</header>
+</div>
+<aside class=col-lg-6>
+IMG
+<p>Nudge</p>
+</aside-->
+</article>
+<article class="container white shadow">
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=knowledge-share>
+<h2>Knowledge share</h2>
+<h3>What we can offer</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<p>We share knowledge at PER in different ways. We hire our venue to people interested in sustainability or music. We have opportunities to volunteer, different types of practical training and consultation.</p>
+<p>Our multi-day courses, have quality accommodation and can cater for pets.</p>
+<p>With our courses, we adapt to suit all skill levels and abilities.</p>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-1></div>
+<div class=col-xs-10><blockquote>We aim to offer genuine growth,<br/>both personally and professionally.</blockquote>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6 id=venue-hire>
+<h5>Venue hire</h5>
+<p>PER is ideal for gatherings in a natural environment. We host conferences, seminars and presentations. We cater to self-service, lunches, banquets and tasting evenings with local organic food.</p>
+<p>Our dining room covers 60 with a bar, lit stage and sound system. We also have an outdoor dining space for 30 people. Great for eating together during activities.</p>
+<p>Our classroom holds 30 people, with whiteboards and integrated audiovisual equipment, ideal for meetings.</p>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215">
+</form>
+</div>
+</div>
+<!--div class=row>
+<div class=col-md-6 id=courses>
+<h4>Course ONE</h4>
+<p>Text</p>
+</div>
+<aside class=col-lg-6>
+</aside>
+</div>
+<div class=row>
+<div class=col-md-6 id=courses>
+<h4>Course TWO</h4>
+<p>Text</p>
+</div>
+<aside class=col-lg-6>
+</aside>
+</div-->
+<div class=row>
+<div class=col-md-6 id=workshops>
+<h4>Workshop ONE</h4>
+<p>Courses are information focused:</p>
+• Change job, change your life<br/>
+• Energy efficiency for homeowners<br/>
+</div>
+<aside class=col-lg-6></aside>
+</div>
+<div class=row>
+<div class=col-md-6 id=courses>
+<h4>Workshop TWO</h4>
+<p>Workshops are practical:<br/>
+• Dried Fruit<br/>
+• Fermentation<br/>
+</div>
+<aside class=col-lg-6></aside>
+</div>
+<section class=card-inverse>
+<header class="jumbotron oxford" id=volunteering>
+<h3>Volunteering</h3>
+<h4>An intro&shy;duction to life changing skills</h4>
+</header>
+<div class=card-block>
+<div class=row>
+<div class="col-md-2 text-center">
+<a href="docs/application-form.doc" target=_blank><img alt="On-site photo" class=img-responsive src="images/005ba5-circle-info.svg" alt="Application form" ondragstart="return false" width=96 height=96 />Application form</a><br/><br/>
+<a href="docs/volunteer-policy.pdf" target=_blank><img alt="On-site photo" class=img-responsive src="images/0ff-circle-acrobat.svg" alt="Volunteer policy" ondragstart="return false" width=96 height=96 />Volunteer policy</a>
+<hr/>
+</div>
+<aside class=col-md-4>
+<h5><dfn>Volunteering</dfn></h5>
+<dl>
+<dt><dfn>Who is volunteering for?</dfn></dt>
+<dd>People interested in renewable energy and perma&shy;culture</dd>
+<dt><dfn>Who is woofing for?</dfn></dt>
+<dd>People interested in the organic movement</dd>
+<dt><dfn>Duration</dfn></dt>
+<dd>One week slots</dd>
+<dt><dfn>Daily structure</dfn></dt>
+<dd>Morning: 3h activities<br/>
+Afternoon: 3h activities</dd>
+<dt><dfn>Availability</dfn></dt>
+<dd>Avg. 4 volunteers throughout the year</dd>
+<dt><dfn>Lodgings</dfn></dt>
+<dd>Food and accommodation is provided</dd>
+<dt><dfn>Equipment</dfn></dt>
+<dd>Tools and equipment are provided</dd>
+<dt><dfn>Footwear</dfn></dt>
+<dd>Bring your own trekking boots, or for heavier jobs: steel toecaps</dd>
+<dt><dfn>Recommendations</dfn></dt>
+<dd>Sun protection, hat and gloves. A change of work clothes, and a comfortable change for evenings and weekends</dd>
+<dt><dfn>Transport</dfn></dt>
+<dd>Your own car is an advantage, but not required
+<br/><a data-scroll href="#route" ondragstart="return false">
+Find us on Google Maps</a></dd>
+<dt><dfn>Age</dfn></dt>
+<dd>18+</dd>
+<dt><dfn>Accessibility</dfn></dt>
+<dd>Dependent on application</dd>
+</dl>
+</aside>
+<div class=col-md-6>
+<h5><dfn>About volunteering:</dfn></h5>
+<p>There are opportunities to make the future better. At PER we can help you face climate change, develop useful skills and open your mind.</p>
+<p>We practice traditional land management techniques and also research sustainable energy. This is a great combination to change life direction or to practice ethical living.</p>
+<p>You'll also meet other talented people that are committed to positive change.</p>
+<h5><dfn>Application process:</dfn></h5>
+<p>Our application form covers your past experience, availability and expectations. It's important that we're a good fit for each other, so please read the <a href="docs/volunteer-policy.pdf" target=_blank>Volunteer policy</a>.<br/>When you have finished email your application to: <a href="mailto:scrivi@per.umbria.it">scrivi@per.umbria.it</a></p>
+<h5><dfn>Selection process:</dfn></h5>
+<p>We choose people based on their characteristics and suitability. We always need good people with different skills.</p>
+<h5><dfn>Will there be enough slots?</dfn></h5>
+<p>When we coordinate a large project there are more lodgings available. Please complete an application and tell us about your skills.</p>
+<h5>Structure:</h5>
+<ul>
+<li>Everybody, everyday will be required to help with general tasks for meals, cleaning, caring for the animals and being generally reliable!</li>
+<li>Mornings, weekdays: working with renewable tech, and in the fields.</li>
+<li>Afternoons, weekdays: working on-site with other seasonal tasks.</li>
+<li>All volunteers: Saturday - Sunday: exploring interests, developing ideas and relaxing.</li>
+</ul>
+<h5><dfn>About woofing:</dfn></h5>
+<p><a href="http://www.wwoof.net/how-it-works/">Willing Workers on Organic Farms</a>, WWOOF is a loose network of farms that can help people find life changing work within the organic movement.</p>
+<h5>Woofing structure:</h5>
+<ul>
+<li>Mornings, weekdays: strenuous tasks in the fresher hours, in the fields and harvesting.</li>
+<li>Afternoons, weekdays: working on other seasonal tasks.</li>
+</ul>
+<p>If you have any questions please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a>, or call us:</p>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215">
+</form>
+</div>
+</div>
+</div>
+</section>
+<div class=row>
+<div class="col-xs-10 col-sm-12 m-t" id=advice>
+<h3 class="m-t">Consultancy advice</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-12>
+</div>
+<div class=col-md-6>
+<h4>Planning, design and installation</h4>
+<p>Benefit from our experience. We have used all kinds of technology and can help you save as you implement your idea.</p>
+<p>Please <a data-scroll href="#contact" ondragstart="return false">contact&nbsp;us</a> for work enquiries, or read and share these&nbsp;tips.</p>
+</div>
+<div class=col-md-6>
+<h5>Tried and&nbsp;tested</h5>
+<p>Reliable information is the most valuable. Our recommendations have been tested over time and you can see them all working on site.</p>
+<p>Here is some resources to get you started.</p>
+</div>
+<div class=col-xs-12>
+<blockquote>Don't imitate.<br/>Be inspired and unearth&nbsp;your style!</blockquote>
+</div>
+</div>
+<!--div class=row>
+<div class="col-xs-10 col-sm-12" id=reading-tips>
+<h3>Reading tips</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<figcaption>See our planting scheme photos.</figcaption>
+</div>
+<div class=col-md-6>
+<h4>Recommended title</h4>
+<form action="#">
+<input class="btn btn-lg oxford" type=submit value="&#9733; Buy Now">
+</form>
+<p>One two three four five six seven eight, nine ten. Eleven.</p>
+<p>Excerpt about life changing book one:</p>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<figcaption>See our planting scheme photos.</figcaption>
+</div>
+<div class=col-md-6>
+<h4>Recommended title</h4>
+<form action="#">
+<input class="btn btn-lg oxford" type=submit value="&#9733; Buy Now">
+</form>
+<p>One two three four five six seven eight, nine ten. Eleven.</p>
+<p>Excerpt about life changing book two:</p>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<figcaption>Bambini.</figcaption>
+</div>
+<div class=col-md-6>
+<h3>Website title</h3>
+<p>One two three four five six seven eight, nine ten. Eleven.</p>
+<p>Excerpt from link one:</p>
+<a>link.com</a>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=recommended-kit>
+<h3>Recommended kit</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<figcaption>PER logo T-Shirt.</figcaption>
+</div>
+<div class=col-md-6>
+<h3>Equipment</h3>
+<form action="#">
+<input class="btn btn-lg oxford" type=submit value="&#9733; Buy Now">
+</form>
+<p>One two three four five six seven eight, nine ten. Eleven.</p>
+<p>Excerpt about first item:</p>
+<p>link.com</p>
+</div>
+</div-->
+<div class=row id=partners>
+<div class="col-xs-10 col-sm-12" id=partners>
+<h3>Partners with PER</h3>
+<hr/>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<div class="partner-slider js-flickity" data-flickity-options='{ "autoPlay": true, "autoPlay": 8888, "imagesLoaded": true, "contain": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false }'>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-01.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-02.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-03.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-04.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-05.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-06.svg" class=no-select>
+</div>
+<div class="gallery-cell no-select">
+<img alt="On-site photo" src="images/partner-logo-07.svg" class=no-select>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h4>Sustainable tech</h4>
+<p><a href="http://www.osacaldaie.it/" target=_blank ondragstart="return false">OSA</a> Italian alternative heating solutions company.</p>
+<p><a href="http://www.sunergsolar.com/" target=_blank ondragstart="return false">Sunergy Solar</a> produce solar technologies in Italy.</p>
+<p><a href="http://www.tmlgroup.it/" target=_blank ondragstart="return false">The TML group</a> make eco-conscious water tanks.</p>
+<h4>Travel advice</h4>
+<p><a href="http://www.destinazioneumana.it/en/chi-mi-accoglie/parco-energia-rinnovabile/" target=_blank ondragstart="return false">Destinazione Umana</a> A travel review by "Human Destination".</p>
+</div>
+<div class=col-md-6>
+<h4>Online store</h4>
+<p><a href="http://www.tecnonatural.it/" target=_blank ondragstart="return false">The TML group</a> useful things for people and the environment.</p>
+<h4>Media partners</h4>
+<p><a href="http://www.smarketing.it/" target=_blank ondragstart="return false">Smarketing</a> hosting our site and printing our flyers.</p>
+<p><a href="http://www.inspiredlabs.co.uk/" target=_blank ondragstart="return false">Scott Phillips</a> is a user experience designer. He is interested in projects with broad creative scope that will make a difference.</p>
+</div>
+</div>
+</article>
+<article class=container>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=social>
+<h3>Social Media</h3>
+<hr/>
+</div>
+</div>
+<div class="row text-center" style="padding-bottom: 1.618rem;">
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.tripadvisor.co.uk/Hotel_Review-g1757556-d1756467-Reviews-PeR_Il_Parco_dell_Energia_Rinnovabile-Frattuccia_Province_of_Terni_Umbria.html" target=_blank ondragstart="return false">
+<img alt="On-site photo" class=no-select src="images/ccc-circle-tripadvisor.svg" width=140 height=140>
+<h4>Trip Advisor</h4>
+<p class=trip-advisor-rating>&#x25c9;&#x25c9;&#x25c9;&#x25c9;&#x25c9;</p>
+<p>#1 in&nbsp;Frattuccia<br/>
+<small>Based on 50+ reviews</small></p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://plus.google.com/116892357785403600038/about?hl=en" target=_blank ondragstart="return false">
+<img alt="On-site photo" class=no-select src="images/dd4b39-circle-visit.svg" alt=gplus width=140 height=140>
+<h4>G+ maps</h4>
+<h5 lang=en-US>PER, Sustainability research&nbsp;center</h5><p>Directions,&nbsp;Photos<br/>
+Google Reviews, Bookings<br/>&nbsp;</p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.youtube.com/user/risparmiaenergia/videos" target=_blank ondragstart="return false">
+<img alt="On-site photo" class=no-select src="images/d82532-circle-youtube.svg" width=140 height=140>
+<h4>YouTube</h4>
+<p>430,000 channel views.<br/>
+<small>Joined Jul 22, 2010</small></p>
+</a>
+<a class="panel-links col-xs-12 col-sm-6 col-md-3" href="https://www.facebook.com/PeRIlParcodellaEnergiaRinnovabile/" target=_blank ondragstart="return false">
+<img alt="On-site photo" class=no-select src="images/3b5998-circle-facebook.svg" width=140 height=140>
+<h4 lang=it>PeR&nbsp;Il&nbsp;Parco della&nbsp;Energia Rinnovabile</h4>
+<p>PER, Sustainability research&nbsp;center<br/>
+<small>We're always happy to share</small></p>
+</a>
+</div>
+</article>
+<article class="container white shadow" id=contact>
+<div class=row>
+<div class="col-xs-10 col-sm-12" id=contact>
+<h2>Contact us</h2>
+<h3 lang=it>Il Parco dell' Energia Rinnovabile</h3>
+<hr/>
+</div>
+<div class=hidden-xs></div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<h4>Speak to us<br/>
+<small>Monday&nbsp;to&nbsp;Saturday, 9:00am&nbsp;til&nbsp;5:00pm<br/>Sunday, 9:00am&nbsp;til&nbsp;12:00pm</small></h4>
+<h4>Consultancy</h4>
+<form action="mailto:scrivi@per.umbria.it">
+<input class="btn spa" type=submit value="&#9990; Work enquiries">
+</form>
+<h4>Office</h4>
+<form action="tel:+39 335 399 215">
+<input class="btn spa" type=submit value="&#9990; +39 335 399 215">
+</form>
+<h4>Mobile</h4>
+<form action="tel:+39 0744 988 050">
+<input class="btn spa" type=submit value="&#9990; +39 0744 988 050">
+</form>
+<h4>Fax</h4>
+<form action="tel:+441782753275">
+<input class="btn spa" type=submit value="&#9990; +39 07441 901 085">
+</form>
+<br/>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<h4>Get in touch<br/>
+<small>Visit our ecoshop,<br/>
+tell us about&nbsp;your&nbsp;visit<br/>or just say hello</small></h4>
+<h4>Email us</h4>
+<form action="mailto:scrivi@per.umbria.it">
+<input class="btn oxford" type=submit value="scrivi@per.umbria.it">
+</form>
+<h4>Our shop</small></h4>
+<form action="http://www.tecnonatural.it/">
+<input class="btn oxford" type=submit value="&#9733; Tecno Natural">
+</form>
+<h4>Reservations</h4>
+<form action="https://www.google.com/maps/place/Per+-+Il+Parco+Dell'Energia+Rinnovabile/@42.6186915,12.3856205,17z/data=!3m1!4b1!4m5!3m4!1s0x132edcff41b9463f:0xed4d664c2ba020fc!8m2!3d42.6186915!4d12.3878092?hl=en" target=_blank ondragstart="return false">
+<input class="btn oxford" type=submit value="&#9656; Book here">
+</form>
+<h4>Booking enquiry</h4>
+<form action="mailto:scrivi@per.umbria.it?subject=Please send me booking information">
+<input class="btn oxford" type=submit value="&#9656; Tell me more">
+</form>
+<br/>
+<br/>
+</div>
+<div class=hidden-xs></div>
+<div class="col-xs-12 col-sm-6 col-md-4" id=route>
+<h4>Find us<br/>
+<small>Deep in the heart of&nbsp;Italy</small></h4>
+<address lang=it>
+<b>
+<a href="https://www.google.com/maps/dir/current+location/Per+-+Il+Parco+Dell'Energia+Rinnovabile,+Localita'+Inano+-+Frattuccia,+05025+Collicello,+Italy" target=_blank ondragstart="return false">Parco&nbsp;dell'&nbsp;Energia Rinnovabile</a></b><br/>
+Localitá Inano snc.<br/>
+Frazione Frattuccia,<br/>
+05025, Guardea TR,<br/>
+Italy<br/>
+</address>
+<form action="https://www.google.com/maps/dir/current+location/Per+-+Il+Parco+Dell'Energia+Rinnovabile,+Localita'+Inano+-+Frattuccia,+05025+Collicello,+Italy">
+<input class="btn purple" type=submit value="&#10148; Route location">
+</form>
+<br/>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="map-slider js-flickity" data-flickity-options='{ "autoPlay": true, "autoPlay": 8888, "imagesLoaded": true, "contain": true, "wrapAround": true, "prevNextButtons": false }'>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/landsat-1x.jpg 1x, images/landsat-2x.jpg 2x" alt="Local map" height=240>
+</div>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/svolta-a-destra-prima-di-Amelia_1-1x.jpg 1x, images/svolta-a-destra-prima-di-Amelia_1-2x.jpg 2x" alt="Regional map" height=240>
+</div>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/svolta-a-destra_prima-di-_Amelia-1x.jpg 1x, images/svolta-a-destra_prima-di-_Amelia-2x.jpg 2x" alt="Regional map" height=240>
+</div>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/da-sud-1x.jpg 1x, images/da-sud-2x.jpg 2x" alt="Local map" height=240>
+</div>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/da-Nord-150x150.jpg 1x, images/da-Nord.jpg 2x" alt="Building exterior" height=240>
+</div>
+<div class=gallery-cell>
+<img alt="On-site photo" srcset="images/local-map-1x.jpg 1x, images/local-map-2x.jpg 2x" alt="Local map" height=240>
+</div>
+</div>
+<br/>
+<form action="https://www.google.com/maps/contrib/105399758459819821484/photos/@42.6188917,12.387526,3a,75y,63.17h,83.51t/data=!3m8!1e1!3m6!1s-GnR9_tc_S1U%2FVkjAx1qemNI%2FAAAAAAAAC4I%2F035n3FVWQ2gGtqwI8-aJSh13Rd_IU5csA!2e4!3e12!6s%2F%2Flh3.googleusercontent.com%2F-GnR9_tc_S1U%2FVkjAx1qemNI%2FAAAAAAAAC4I%2F035n3FVWQ2gGtqwI8-aJSh13Rd_IU5csA%2Fw203-h100-p-k-no%2F!7i2508!8i1254!4m3!8m2!3m1!1e1">
+<input class="btn mustard" type=submit value="&#10132; 360&deg; Photosphere">
+</form>
+</div>
+</div>
+<div class=row id=company>
+<div class="col-xs-10 col-sm-12">
+<h3>Company information</h3>
+<hr/>
+</div>
+<div class=col-xs-6>
+</div>
+<div class="col-xs-12 text-center">
+<p lang=it>Un'iniziativa di Etic Italia, Società Agricola a.r.l. |&nbsp;P.IVA 0134869055</p>
+</div>
+</div>
+</article>
+<article class=container>
+<footer class="footer text-center" style="background: transparent!important; ">
+<p>&copy; <a href="http://inspiredlabs.co.uk" style="background: transparent!important;" target=_blank ondragstart="return false">
+Scott Phillips</a> 2016 | Logo marks and icons of their respective&nbsp;owners<br /></p>
+</footer>
+</article>
+</div>
+</article>
+<script src="js/cferdinandi.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script>smoothScroll.init({offset:0});gumshoe.init({});</script>
+<script>(function(){var mqEvents=function(mediaChangeHandler){var sheets=document.styleSheets;if(!mediaChangeHandler){console.error('mqEvents needs a mediaChangeHandler to do its job.');return false;}
+for(var i=0;i<sheets.length;i+=1){var rules=sheets[i].cssRules;for(var j=0;j<rules.length;j+=1){if(rules[j].constructor===CSSMediaRule){var mql=window.matchMedia(rules[j].media.mediaText);mql.addListener(mediaChangeHandler);mediaChangeHandler(mql);}}}}
+window.mqEvents=mqEvents;}());</script>
+<script>var msg=document.getElementById('condition'),handleMediaChange=function(mql){console.log();if(window.matchMedia("(max-width:33.9999em)").matches){document.getElementById("togglebox").checked=false;}
+else if(window.matchMedia("(min-width:34em)").matches){document.getElementById("togglebox").checked=true;}};mqEvents(handleMediaChange);</script>
+<!--script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-42761599-7','auto');ga('send','pageview');</script-->
+</body>
+</html>
